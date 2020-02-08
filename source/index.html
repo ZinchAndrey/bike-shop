@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bike Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bike Shop</title>
 </head>
 <body>
-
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__logo">
+        <a href="#">
+          <img src="" alt="Логотип Bike Shop">
+        </a>
+      </div>
+      <div class="page-header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="">Велосипеды</a></li>
+          <li class="nav__item"><a href="">Аксессуары</a></li>
+          <li class="nav__item"><a href="">Запчасти</a></li>
+          <li class="nav__item"><a href="">Мастерская</a></li>
+          <li class="nav__item"><a href="">Доставка и оплата</a></li>
+          <li class="nav__item"><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="page-header__user-block">
+        <ul class="page-header__user-block-list">
+          <li class="page-header__user-block-item"><a href="#" aria-label="Авторизация"></a></li>
+          <li class="page-header__user-block-item"><a href="#" aria-label="Поиск"></a></li>
+          <li class="page-header__user-block-item"><a href="#" aria-label="Корзина"></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Интернет-магазин велосипедов Bike-Shop</h1>
+    <section class="promo">
+      <div class="promo__container">
+        <div class="promo__slogan">
+          <h2><span>Велосипеды</span> С твоим характером</h2>
+          <a href="#" class="promo__link button">В магазин</a>
+        </div>
+        <div class="promo__social social-block">
+          <ul class="social-block__list">
+            <li class="social-block__item"><a href="#" aria-label="В контакте"></a></li>
+            <li class="social-block__item"><a href="#" aria-label="Facebook"></a></li>
+            <li class="social-block__item"><a href="#" aria-label="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="slider slider--bikes">
+      <h2>У нас более 200 моделей пргулочных велосипедов для настоящих мужчин</h2>
+      <p>Бесплатный выездной тест-драйв на все модели. Система рассрочки 0-0-5. Для членов клуба бесплатно предоставляется выездной сервис, зимнее хранение и куча привелегий от партнеров.</p>
+      <div class="slider__block slider-block">
+        <ul class="slider-block__list">
+          <!-- данный  элемент скопировать необходимое количество раз -->
+          <li class="slider-block__item">
+            <div class="slider-block__photo">
+              <img src="" alt="Фото байка">
+              <a href="#" aria-label="Добавить в корзину"></a>
+            </div>
+            <div class="slider-block__goods-description">
+              <h3>NEUZER Chopper Apocalypse</h3>
+              <p>24”, сталь Hi-Ten Венгрия</p>
+              <p class="slider-block__goods-price">75 000 Р</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-block__link-wrapper">
+        <a href="#" class="slider-block__link button">Все велосипеды</a>
+      </div>
+    </section>
+    <section class="info info--workshop">
+      <div class="info__container">
+        <img src="" alt="Фото мастера">
+        <div class="info__block">
+          <h2>Мастерская</h2>
+          <p>Наши мастера всегда готовы привести в чувство вашего коня, кастомизировать любую модель или просто помочь советом.</p>
+          <p class="">Возможен выезд по вашему адресу. Для велосипедов, купленных у нас, обслуживание предоставляется бесплатно.</p>
+          <a href="#" class="info__link button">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="slider slider--details">
+      <h2>Запчасти и аксессуары</h2>
+      <p>Всегда большой выбор запчастей и аксессуаров для чоппер-байков. Если вы чего-то не нашли в наличии, наши консультанты помогут заказать и доставить товар из любой точки мира.</p>
+      <div class="slider__block slider-block">
+        <ul class="slider-block__list">
+          <!-- данный  элемент скопировать необходимое количество раз -->
+          <li class="slider-block__item">
+            <div class="slider-block__photo">
+              <img src="" alt="Фото запчасти">
+              <a href="#" aria-label="Добавить в корзину"></a>
+            </div>
+            <div class="slider-block__goods-description">
+              <h3>Сумка на руль B-soul</h3>
+              <p>15х10 х5 cm натуральная кожа</p>
+              <p class="slider-block__goods-price">3200 Р</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-block__link-wrapper">
+        <a href="#" class="slider-block__link button">Перейти в каталог</a>
+      </div>
+    </section>
+    <section class="info info--club">
+      <div class="info__container">
+        <div class="info__block">
+          <h2>Вступай в клуб</h2>
+          <p>У тебя уже есть чоппер-байк?</p>
+          <p>Регистрируйся и получай специальные привелегии, приглашения на закрытые мероприятия, специальные цены в нашем магазине и много других плюшек.</p>
+          <a href="#" class="info__link button">Вступить</a>
+        </div>
+        <img src="" alt="Фото члена клуба">
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="">Велосипеды</a></li>
+          <li class="nav__item"><a href="">Аксессуары</a></li>
+          <li class="nav__item"><a href="">Запчасти</a></li>
+          <li class="nav__item"><a href="">Мастерская</a></li>
+          <li class="nav__item"><a href="">Тест-драйв</a></li>
+          <li class="nav__item"><a href="">Доставка и оплата</a></li>
+          <li class="nav__item"><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__social social-block">
+        <ul class="social-block__list">
+          <li class="social-block__item"><a href="#" aria-label="В контакте"></a></li>
+          <li class="social-block__item"><a href="#" aria-label="Facebook"></a></li>
+          <li class="social-block__item"><a href="#" aria-label="Instagram"></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__logo">
+        <a href="#">
+          <img src="" alt="Логотип Bike Shop">
+        </a>
+      </div>
+      <div class="page-footer__confidence">
+        <p>
+          <span>2018</span> Политика конфиденциальности
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
