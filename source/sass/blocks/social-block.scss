@@ -1,0 +1,30 @@
+.social-block__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100px;
+}
+
+.social-block__item {
+  a::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18px;
+    width: 22px;
+  }
+
+  &--vk a::before {
+    background-image: url("../img/vk.svg");
+  }
+
+  &--facebook a::before {
+    background-image: url("../img/fb.svg");
+  }
+
+  &--instagram a::before {
+    background-image: url("../img/inst.svg");
+  }
+}

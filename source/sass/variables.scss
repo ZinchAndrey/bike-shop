@@ -6,6 +6,7 @@ $hagin-caps-medium: "Hagin Caps Medium", "Arial", sans-serif;
 $beige-background: #e9e1d5;
 $dark-beige-text: #9b8869;
 $golden-text: #baa480;
+$black-opacity-background: rgba(26, 25, 24, 0.8);
 
 @mixin button-style-none() {
   border: none;

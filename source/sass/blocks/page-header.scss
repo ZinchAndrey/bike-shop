@@ -1,6 +1,9 @@
 .page-header {
   text-transform: uppercase;
   color: $dark-beige-text;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 
 .page-header__container {

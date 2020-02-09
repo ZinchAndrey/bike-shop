@@ -1,0 +1,12 @@
+.button {
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+  border: 1px solid $golden-text;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+}
