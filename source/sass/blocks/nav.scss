@@ -1,0 +1,23 @@
+.nav {
+  padding: 0 20px;
+  box-sizing: content-box;
+  width: 740px;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+.nav__item {
+  padding-right: 10px;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
+}

@@ -1,3 +1,6 @@
-body {
-    background: red;
-}
+@import "normalize.scss";
+@import "base.scss";
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/nav.scss";
+@import "blocks/page-footer.scss";

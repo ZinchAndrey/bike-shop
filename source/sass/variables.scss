@@ -1,0 +1,14 @@
+//шрифты
+$roboto: "Roboto", "Arial", sans-serif;
+$hagin-caps-medium: "Hagin Caps Medium", "Arial", sans-serif;
+
+// цвета
+$beige-background: #e9e1d5;
+$dark-beige-text: #9b8869;
+$golden-text: #baa480;
+
+@mixin button-style-none() {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}

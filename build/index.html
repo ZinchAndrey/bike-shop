@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="fonts/Roboto-Regular.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/HaginCapsMedium.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Bike Shop</title>
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__container">
+      <button class="page-header__menu-button"></button>
       <div class="page-header__logo">
         <a href="#">
-          <img src="" alt="Логотип Bike Shop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-desktop@2x.png">
+              <img src="img/logo-mobile@2x.png" alt="Логотип Bike Shop">
+          </picture>
         </a>
       </div>
       <div class="page-header__nav nav">
@@ -26,9 +33,9 @@
       </div>
       <div class="page-header__user-block">
         <ul class="page-header__user-block-list">
-          <li class="page-header__user-block-item"><a href="#" aria-label="Авторизация"></a></li>
-          <li class="page-header__user-block-item"><a href="#" aria-label="Поиск"></a></li>
-          <li class="page-header__user-block-item"><a href="#" aria-label="Корзина"></a></li>
+          <li class="page-header__user-block-item page-header__user-block-item--user"><a href="#" aria-label="Авторизация"></a></li>
+          <li class="page-header__user-block-item page-header__user-block-item--search"><a href="#" aria-label="Поиск"></a></li>
+          <li class="page-header__user-block-item page-header__user-block-item--basket"><a href="#" aria-label="Корзина"></a></li>
         </ul>
       </div>
     </div>
