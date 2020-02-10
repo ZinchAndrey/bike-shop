@@ -1,8 +1,9 @@
 .promo {
   min-height: 768px;
   background-image: url("../img/promo-background@1x.jpg");
-  background-size: cover;
+  background-size: auto auto;
   background-repeat: no-repeat;
+  background-position: top center;
   color: $golden-text;
   text-transform: uppercase;
   position: relative;
@@ -49,5 +50,36 @@
 
   .promo__link {
     background-color: $black-opacity-background;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    min-height: 568px;
+    // background-position-x: center;
+  }
+
+  .promo__slogan {
+    width: 100%;
+    padding-top: 54px;
+    padding-left: 38px;
+    padding-right: 32px;
+
+    h2 {
+      font-size: 25px;
+      margin-bottom: 124px;
+
+      span {
+        font-size: 44px;
+      }
+    }
+  }
+
+  .promo__link {
+    margin-left: -10px;
+  }
+
+  .promo__social {
+    display: none;
   }
 }
