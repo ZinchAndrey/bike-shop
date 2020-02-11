@@ -1,20 +1,22 @@
-.slider-block__photo {
+.slider-block__wrapper {
   position: relative;
+  display: flex;
 
   img {
-    position: relative;
-  }
-
-  img::before {
-    content: "";
-    color: green;
     position: absolute;
-    width: 178px;
-    height: 240px;
-    border: 6px solid $grey-border;
-    box-sizing: border-box;
-    background-color: black;
+    left: 89px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
+}
+
+.slider-block__photo-frame {
+  color: green;
+  position: relative;
+  width: 178px;
+  height: 240px;
+  border: 6px solid $grey-border;
+  box-sizing: border-box;
 }
 
 .slider-block__list {
