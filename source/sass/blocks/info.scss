@@ -2,19 +2,23 @@
   background-image: url("../img/workshop-background@1x.jpg");
   height: 576px; // временно
   background-size: cover;
-  padding: 123px 15px 95px;
+  padding: 123px 0 95px;
 }
 
 .info__container {
   margin: 0 auto;
+  padding: 0 15px;
   width: 77%;
   display: flex;
   justify-content: space-between;
+  min-width: 1000px;
+  max-width: 1230px;
 }
 
 .info__block {
   width: 49.3%;
   margin-top: -5px;
+  margin-left: 35px;
 
   h2 {
     color: $golden-text;
@@ -39,4 +43,22 @@
 .info__link {
   color: $golden-text;
   margin-top: 35px;
+}
+
+.info--club {
+  .info__block {
+    margin: 0 35px 0 -5%;
+
+    @media (max-width: 1100px) {
+      margin: 0 35px 0 0;
+    }
+  }
+
+  .info__link {
+    margin-top: 65px;
+
+    @media (max-width: 1100px) {
+      margin-top: 5px;
+    }
+  }
 }

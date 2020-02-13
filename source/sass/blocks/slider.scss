@@ -61,6 +61,16 @@
   }
 }
 
+.slider--details {
+  .slider__text-container {
+    margin-bottom: 65px;
+  }
+
+  .slider__link-wrapper {
+    margin-top: 68px;
+  }
+}
+
 @media (max-width: 767px) {
   .slider {
     padding-top: 25px;
