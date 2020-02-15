@@ -49,6 +49,10 @@
   padding-bottom: 300px;
   position: relative;
 
+  @media (max-width: 1200px) {
+    padding-bottom: 200px;
+  }
+
   .info__block {
     margin: 0 35px 0 -5%;
 
@@ -142,6 +146,8 @@
   }
 
   .info--club {
+    padding-bottom: 180px;
+
     .info__block {
       margin-bottom: 30px;
     }
