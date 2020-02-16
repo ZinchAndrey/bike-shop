@@ -3,6 +3,10 @@
   bottom: 0;
   color: $golden-text;
   width: 100%;
+
+  &--not-main {
+    position: unset;
+  }
 }
 
 .page-footer__container {

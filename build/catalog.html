@@ -40,34 +40,173 @@
       </div>
     </div>
   </header>
-  <section class="toolbar">
-    <div class="toolbar__container">
-      <ul class="toolbar__list">
-        <li class="toolbar__item">
-          <a href="#">Сбросить фильтры</a>
-        </li>
-        <li class="toolbar__item">
-          <select name="sorting" id="sorting">
-            <option value="">По популярности</option>
-            <option value="">По цене</option>
-          </select>
-        </li>
-        <li class="toolbar__item">
-          <div class="toolbar__amount-list-contaner">
-            <span>Показывать по</span>
-            <ul class="toolbar__amount-list">
-              <li class="toolbar__amount-item">12</li>
-              <li class="toolbar__amount-item">24</li>
-              <li class="toolbar__amount-item">Все</li>
+  <main class="page-catalog">
+    <h1 class="visually-hidden">Каталог велосипедов Bike Shop</h1>
+    <section class="toolbar">
+      <h2 class="visually-hidden">Панель сортировки результатов</h2>
+      <div class="toolbar__container">
+        <ul class="toolbar__list">
+          <li class="toolbar__item">
+            <a href="#">Сбросить фильтры</a>
+          </li>
+          <li class="toolbar__item">
+            <select name="sorting" id="sorting">
+              <option value="">По популярности</option>
+              <option value="">По цене</option>
+            </select>
+          </li>
+          <li class="toolbar__item">
+            <div class="toolbar__amount-list-contaner">
+              <span>Показывать по</span>
+              <ul class="toolbar__amount-list">
+                <li class="toolbar__amount-item">12</li>
+                <li class="toolbar__amount-item">24</li>
+                <li class="toolbar__amount-item">Все</li>
+              </ul>
+            </div>
+            <ul class="toolbar__showing-type-list">
+              <li class="toolbar__showing-type-item"><a href="#" class="toolbar__showing-type-link toolbar__showing-type-link--tile" aria-label="Плитка"></a></li>
+              <li class="toolbar__showing-type-item"><a href="#" class="toolbar__showing-type-link toolbar__showing-type-link--list" aria-label="Список"></a></li>
             </ul>
-          </div>
-          <ul class="toolbar__showing-type-list">
-            <li class="toolbar__showing-type-item"><a href="#" class="toolbar__showing-type-link toolbar__showing-type-link--tile" aria-label="Плитка"></a></li>
-            <li class="toolbar__showing-type-item"><a href="#" class="toolbar__showing-type-link toolbar__showing-type-link--list" aria-label="Список"></a></li>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog">
+      <h2 class="visually-hidden">Велосипеды</h2>
+      <div class="catalog__container">
+        <div class="catalog__sidebar sidebar"></div>
+        <div class="catalog__block slider-block slider-block--catalog">
+          <ul class="slider-block__list">
+            <!-- данный  элемент скопировать необходимое количество раз -->
+            <li class="slider-block__item">
+              <div class="slider-block__wrapper">
+                <div class="slider-block__photo-frame">
+                  <a class="slider-block__basket" href="#" aria-label="Добавить в корзину"></a>
+                  <a class="slider-block__compare" href="#" aria-label="Добавить в сравнение"></a>
+                </div>
+                <img src="img/neuzer@1x.png" width="283" alt="Фото байка">
+              </div>
+              <div class="slider-block__goods-description">
+                <h3>NEUZER Chopper<br>Apocalypse</h3>
+                <p>24”, сталь Hi-Ten Венгрия</p>
+                <p class="slider-block__goods-price">75 000 Р</p>
+              </div>
+            </li>
+            <li class="slider-block__item">
+              <div class="slider-block__wrapper">
+                <div class="slider-block__photo-frame">
+                  <a class="slider-block__basket" href="#" aria-label="Добавить в корзину"></a>
+                  <a class="slider-block__compare" href="#" aria-label="Добавить в сравнение"></a>
+                </div>
+                <img src="img/schwinn@1x.png" width="262" alt="Фото байка">
+              </div>
+              <div class="slider-block__goods-description">
+                <h3>Schwinn <br>Stingray OCC</h3>
+                <p>20”+24”, сталь США</p>
+                <p class="slider-block__goods-price">34 000 Р</p>
+              </div>
+            </li>
+            <li class="slider-block__item">
+              <div class="slider-block__wrapper">
+                <div class="slider-block__photo-frame">
+                  <a class="slider-block__basket" href="#" aria-label="Добавить в корзину"></a>
+                  <a class="slider-block__compare" href="#" aria-label="Добавить в сравнение"></a>
+                </div>
+                <img src="img/harley@1x.png" width="266" alt="Фото байка">
+              </div>
+              <div class="slider-block__goods-description">
+                <h3>	Harley<br>Davidson</h3>
+                <p>20”, сталь Китай</p>
+                <p class="slider-block__goods-price">23 000 Р</p>
+              </div>
+            </li>
+            <!-- отсечка -->
+            <li class="slider-block__item">
+              <div class="slider-block__wrapper">
+                <div class="slider-block__photo-frame">
+                  <a class="slider-block__basket" href="#" aria-label="Добавить в корзину"></a>
+                  <a class="slider-block__compare" href="#" aria-label="Добавить в сравнение"></a>
+                </div>
+                <img src="img/misargi@1x.png" width="319" alt="Фото байка">
+              </div>
+              <div class="slider-block__goods-description">
+                <h3>Micargi Cyclone<br>Electric</h3>
+                <p>26”, 500W, 5 скоростей, сталь США</p>
+                <p class="slider-block__goods-price">154 000 Р</p>
+              </div>
+            </li>
+            <li class="slider-block__item">
+              <div class="slider-block__wrapper">
+                <div class="slider-block__photo-frame">
+                  <a class="slider-block__basket" href="#" aria-label="Добавить в корзину"></a>
+                  <a class="slider-block__compare" href="#" aria-label="Добавить в сравнение"></a>
+                </div>
+                <img src="img/x-front@1x.png" width="286" alt="Фото байка">
+              </div>
+              <div class="slider-block__goods-description">
+                <h3>X-Front<br>Snowmobile</h3>
+                <p>24”, сталь Китай</p>
+                <p class="slider-block__goods-price">42 000 Р</p>
+              </div>
+            </li>
+            <li class="slider-block__item">
+              <div class="slider-block__wrapper">
+                <div class="slider-block__photo-frame">
+                  <a class="slider-block__basket" href="#" aria-label="Добавить в корзину"></a>
+                  <a class="slider-block__compare" href="#" aria-label="Добавить в сравнение"></a>
+                </div>
+                <img src="img/2fast4you@1x.png" width="301" alt="Фото байка">
+              </div>
+              <div class="slider-block__goods-description">
+                <h3>2Fast4You<br>Chopper</h3>
+                <p>24”, сталь Венгрия</p>
+                <p class="slider-block__goods-price">38 000 Р</p>
+              </div>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer page-footer--not-main">
+    <div class="page-footer__container">
+      <div class="page-footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="">Велосипеды</a></li>
+          <li class="nav__item"><a href="">Аксессуары</a></li>
+          <li class="nav__item"><a href="">Запчасти</a></li>
+          <li class="nav__item"><a href="">Мастерская</a></li>
+          <li class="nav__item"><a href="">Тест-драйв</a></li>
+          <li class="nav__item"><a href="">Доставка и оплата</a></li>
+          <li class="nav__item"><a href="">Рассрочка</a></li>
+          <li class="nav__item"><a href="">Вступление в клуб</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social-block">
+          <ul class="social-block__list">
+            <li class="social-block__item social-block__item--vk"><a href="#" aria-label="В контакте"></a></li>
+            <li class="social-block__item social-block__item--facebook"><a href="#" aria-label="Facebook"></a></li>
+            <li class="social-block__item social-block__item--instagram"><a href="#" aria-label="Instagram"></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__logo">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-desktop@2x.png">
+                <img src="img/logo-mobile@2x.png" alt="Логотип Bike Shop">
+            </picture>
+          </a>
+        </div>
+        <div class="page-footer__confidence">
+          <p>
+            <span class="page-footer__confidence-desktop">&copy;2018   |   </span>Политика конфиденциальности
+          </p>
+          <p class="page-footer__confidence-mobile">&copy;2018</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </footer>
 </body>
 </html>

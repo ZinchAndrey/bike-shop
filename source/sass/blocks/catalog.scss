@@ -1,0 +1,28 @@
+.catalog {
+  background-color: $light-beige-background;
+  padding-top: 45px;
+
+  h3 {
+    color: $brown-text;
+  }
+}
+
+.catalog__container {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.catalog__sidebar {
+  width: 182px;
+  border: 1px solid red;
+}
+
+.catalog__block .slider-block__list {
+  width: 966px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
