@@ -1,0 +1,41 @@
+.toolbar {
+  color: $dark-beige-text;
+  background-color: $light-beige-background;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+.toolbar__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.toolbar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $golden-text;
+  border-top: 1px solid $golden-text;
+  padding: 18px 0;
+}
+
+.toolbar__amount-list-contaner {
+  display: flex;
+  min-width: 230px;
+  justify-content: space-between;
+}
+
+.toolbar__amount-list {
+  display: flex;
+  min-width: 120px;
+  justify-content: space-around;
+}
+
+.toolbar__item select {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
