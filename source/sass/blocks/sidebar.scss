@@ -1,0 +1,55 @@
+.sidebar {
+  width: 182px;
+  margin-right: 55px;
+  color: $dark-beige-text;
+  // временно
+  border: 1px solid red;
+}
+
+.sidebar fieldset {
+  border: none;
+  padding-left: 0;
+  border-bottom: 1px solid $dark-beige-text;
+}
+
+.sidebar legend {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  padding: 16px 0;
+}
+
+.sidebar label {
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  display: block;
+  position: relative;
+  padding: 5px 0 5px 27px;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid $dark-beige-text;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.sidebar input:checked + label::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 4px solid $dark-beige-text;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.sidebar input {
+  display: none;
+}
