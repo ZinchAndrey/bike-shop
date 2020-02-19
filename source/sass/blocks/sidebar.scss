@@ -9,7 +9,12 @@
 .sidebar fieldset {
   border: none;
   padding-left: 0;
+  padding-right: 0;
   border-bottom: 1px solid $dark-beige-text;
+}
+
+.sidebar .price-scale {
+  border-bottom: none;
 }
 
 .sidebar legend {
