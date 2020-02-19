@@ -6,6 +6,13 @@
 
   &--not-main {
     position: unset;
+    background-color: $light-beige-background;
+    color: $dark-beige-text;
+
+    .page-footer__nav {
+      border-top: 1px solid $dark-beige-text;
+      border-bottom: 1px solid $dark-beige-text;
+    }
   }
 }
 
@@ -43,7 +50,7 @@
   }
 }
 
-.page-footer__confidence {
+.page-footer .page-footer__confidence {
   text-align: end;
   font-family: $roboto;
   font-size: 14px;

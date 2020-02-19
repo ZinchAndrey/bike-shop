@@ -46,26 +46,26 @@
       <h2 class="visually-hidden">Панель сортировки результатов</h2>
       <div class="toolbar__container">
         <ul class="toolbar__list">
-          <li class="toolbar__item">
+          <li class="toolbar__item toolbar__item--reset-filters">
             <a href="#">Сбросить фильтры</a>
           </li>
-          <li class="toolbar__item">
+          <li class="toolbar__item toolbar__item--sorting">
             <select name="sorting" id="sorting">
               <option value="">По популярности</option>
               <option value="">По цене</option>
             </select>
           </li>
-          <li class="toolbar__item">
+          <li class="toolbar__item toolbar__item--showing">
             <div class="toolbar__amount-list-contaner">
               <span>Показывать по</span>
               <ul class="toolbar__amount-list">
-                <li class="toolbar__amount-item">12</li>
-                <li class="toolbar__amount-item">24</li>
-                <li class="toolbar__amount-item">Все</li>
+                <li class="toolbar__amount-item"><a href="#">12</a></li>
+                <li class="toolbar__amount-item"><a href="#">24</a></li>
+                <li class="toolbar__amount-item"><a href="#">Все</a></li>
               </ul>
             </div>
             <ul class="toolbar__showing-type-list">
-              <li class="toolbar__showing-type-item"><a href="#" class="toolbar__showing-type-link toolbar__showing-type-link--tile" aria-label="Плитка"></a></li>
+              <li class="toolbar__showing-type-item"><a href="#" class="toolbar__showing-type-link toolbar__showing-type-link--table" aria-label="Плитка"></a></li>
               <li class="toolbar__showing-type-item"><a href="#" class="toolbar__showing-type-link toolbar__showing-type-link--list" aria-label="Список"></a></li>
             </ul>
           </li>
@@ -334,6 +334,21 @@
         </div>
       </div>
     </section>
+    <div class="pages">
+      <div class="pages-container">
+        <div class="pages__link-block">
+          <a class="pages__link pages__link--disable pages__link--prev" href="#" aria-label="Переход на другую страницу"></a>
+          <a class="pages__link pages__link--active" href="#" aria-label="Переход на другую страницу">1</a>
+          <a class="pages__link" href="#" aria-label="Переход на другую страницу">2</a>
+          <a class="pages__link" href="#" aria-label="Переход на другую страницу">3</a>
+          <span>...</span>
+          <a class="pages__link pages__link--mob" href="#" aria-label="Переход на другую страницу">24</a>
+          <a class="pages__link pages__link--mob" href="#" aria-label="Переход на другую страницу">25</a>
+          <a class="pages__link" href="#" aria-label="Переход на другую страницу">26</a>
+          <a class="pages__link pages__link--next" href="#" aria-label="Переход на другую страницу"></a>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="page-footer page-footer--not-main">
     <div class="page-footer__container">

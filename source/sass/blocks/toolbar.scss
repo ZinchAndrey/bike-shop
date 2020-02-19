@@ -32,10 +32,59 @@
   display: flex;
   min-width: 120px;
   justify-content: space-around;
+
+  li {
+    border-right: 1px solid $golden-text;
+    padding: 0 10px;
+
+    &:last-child {
+      border: none;
+    }
+  }
 }
 
 .toolbar__item select {
   border: none;
   background-color: transparent;
   color: inherit;
+  cursor: pointer;
+}
+
+.toolbar__item--reset-filters a {
+  color: $red;
+  padding-right: 20px;
+  background: url("../img/close-icon.svg") no-repeat right;
+}
+
+.toolbar__item--sorting {
+  margin-right: auto;
+  margin-left: 135px;
+}
+
+.toolbar__item--showing {
+  display: flex;
+}
+
+.toolbar__showing-type-list {
+  display: flex;
+  width: 35px;
+  margin-left: 27px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar__showing-type-link::before {
+  content: "";
+  width: 12px;
+  height: 11px;
+  background: no-repeat center;
+  display: block;
+}
+
+.toolbar__showing-type-link--table::before {
+  background-image: url("../img/table-icon.svg");
+}
+
+.toolbar__showing-type-link--list::before {
+  background-image: url("../img/list-icon.svg");
 }
