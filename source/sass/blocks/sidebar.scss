@@ -1,20 +1,22 @@
 .sidebar {
   width: 182px;
-  margin-right: 55px;
+  margin-right: 50px;
   color: $dark-beige-text;
   // временно
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .sidebar fieldset {
   border: none;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0 0 4px;
   border-bottom: 1px solid $dark-beige-text;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .sidebar .price-scale {
   border-bottom: none;
+  padding-bottom: 17px;
 }
 
 .sidebar legend {
@@ -32,7 +34,7 @@
   letter-spacing: 0.2px;
   display: block;
   position: relative;
-  padding: 5px 0 5px 27px;
+  padding: 0 0 10px 27px;
 
   cursor: pointer;
 

@@ -11,7 +11,8 @@
 }
 
 .slider-block__item {
-  flex-basis: 283px;
+  flex-basis: 319px;
+  margin-bottom: 30px;
 }
 
 .slider-block__photo-frame {
@@ -58,7 +59,7 @@
   text-align: center;
   width: 230px;
   margin: 40px auto 0;
-  padding: 0 20px;
+  padding: 0;
 
   h3 {
     text-transform: uppercase;
