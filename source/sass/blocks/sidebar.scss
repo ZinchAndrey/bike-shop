@@ -4,6 +4,11 @@
   color: $dark-beige-text;
 }
 
+.sidebar__filters-reset,
+.sidebar__select-block {
+  display: none;
+}
+
 .sidebar fieldset {
   border: none;
   padding: 0 0 4px;
@@ -76,7 +81,57 @@
 
 @media (max-width: 767px) {
   .sidebar {
-    //временно
-    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: $grey-border;
+    width: 305px;
+    top: -40px;
+
+    form {
+      width: 212px;
+      padding: 0 15px;
+    }
+  }
+
+  .sidebar__filters-reset,
+  .sidebar__select-block {
+    display: block;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  .sidebar__filters-reset {
+    color: $red;
+    letter-spacing: 0.04em;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .sidebar__filters-wrapper {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $dark-beige-text;
+
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 5px 20px 5px 0;
+      background: url("../img/close-icon-mob.svg") no-repeat right;
+    }
+  }
+
+  .sidebar__select-block {
+    padding-top: 27px;
+    padding-bottom: 34px;
+
+    select {
+      border: 0;
+      background-color: transparent;
+      color: inherit;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 }

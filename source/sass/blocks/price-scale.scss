@@ -58,3 +58,10 @@
   border-bottom: 2px solid  $dark-beige-text;
   bottom: -1px;
 }
+
+@media (max-width: 767px) {
+  .price-scale {
+    padding-top: 30px;
+    border-top: 1px solid  $dark-beige-text;
+  }
+}
