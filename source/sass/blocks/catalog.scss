@@ -21,3 +21,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+@media (max-width: 767px) {
+  .catalog {
+    padding-top: 30px;
+  }
+
+  .catalog__container {
+    padding: 0;
+  }
+}

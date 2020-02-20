@@ -50,15 +50,23 @@
   cursor: pointer;
 }
 
-.toolbar__item--reset-filters a {
+.toolbar__item-link {
   color: $red;
   padding-right: 20px;
   background: url("../img/close-icon.svg") no-repeat right;
 }
 
+.toolbar__item-link--mob {
+  display: none;
+}
+
 .toolbar__item--sorting {
   margin-right: auto;
   margin-left: 135px;
+
+  @media (max-width: 1023px) {
+    margin-left: 75px;
+  }
 }
 
 .toolbar__item--showing {
@@ -87,4 +95,25 @@
 
 .toolbar__showing-type-link--list::before {
   background-image: url("../img/list-icon.svg");
+}
+
+@media (max-width: 767px) {
+  .toolbar__container {
+    padding: 0 15px;
+  }
+
+  .toolbar__list {
+    padding: 10px 0;
+  }
+
+  .toolbar__item-link--desktop,
+  .toolbar__amount-list-contaner,
+  .toolbar__item--sorting {
+    display: none;
+  }
+
+  .toolbar__item-link--mob {
+    display: inherit;
+    background-image: none;
+  }
 }

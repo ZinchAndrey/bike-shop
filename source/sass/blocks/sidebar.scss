@@ -2,8 +2,6 @@
   width: 182px;
   margin-right: 50px;
   color: $dark-beige-text;
-  // временно
-  // border: 1px solid red;
 }
 
 .sidebar fieldset {
@@ -74,4 +72,11 @@
   height: 15px;
   background: url("../img/accordion-open.svg") no-repeat center;
   background-color: none;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    //временно
+    display: none;
+  }
 }

@@ -50,7 +50,7 @@
   }
 }
 
-.page-footer .page-footer__confidence {
+.page-footer__confidence {
   text-align: end;
   font-family: $roboto;
   font-size: 14px;
@@ -72,6 +72,14 @@
 }
 
 @media (max-width: 767px) {
+  .page-footer {
+    padding: 0 15px;
+  }
+
+  .page-footer__container {
+    width: 100%;
+  }
+
   .page-footer__wrapper {
     flex-direction: column;
     padding: 0;
@@ -114,6 +122,13 @@
     .page-footer__confidence-mobile {
       display: inherit;
       margin-top: 20px;
+    }
+  }
+
+  .page-footer--not-main {
+    .page-footer__container {
+      padding-top: 30px;
+      border-top: 1px solid $dark-beige-text;
     }
   }
 }

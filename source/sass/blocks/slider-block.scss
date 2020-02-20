@@ -7,6 +7,10 @@
     left: 50%;
     bottom: 64px;
     transform: translateX(-50%);
+
+    @media (max-width: 767px) {
+      bottom: 35px;
+    }
   }
 }
 
@@ -45,6 +49,10 @@
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -103,6 +111,14 @@
 
     .slider-block__goods-price {
       font-size: 22px;
+    }
+  }
+
+  .slider-block__item {
+    margin-bottom: 17px;
+
+    &:nth-child(n + 6) {
+      display: none;
     }
   }
 }

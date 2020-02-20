@@ -5,7 +5,7 @@
   line-height: 18px;
 }
 
-.pages-container {
+.pages__container {
   margin: 0 auto 0;
   width: 82%;
   text-align: center;
@@ -64,4 +64,43 @@
   transform: rotate(180deg);
   margin-left: 0;
   margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .pages {
+    padding-bottom: 60px;
+  }
+
+  .pages__container {
+    width: 100%;
+    padding: 0 15px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .pages__link-block {
+    width: 100%;
+    max-width: 400px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .pages__link--mob {
+    display: inherit;
+  }
+
+  .pages__link--prev {
+    margin-right: 5px;
+  }
+
+  .pages__link--next {
+    margin-left: 5px;
+  }
+
+  .pages__link--prev,
+  .pages__link--next {
+    background-image: url("../img/next-arrow-mob.svg");
+  }
 }
