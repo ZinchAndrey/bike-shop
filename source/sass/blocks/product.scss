@@ -1,0 +1,73 @@
+.product {
+  background-color: $beige-background;
+  color: $brown-text;
+  border-top: 1px solid $brown-text;
+}
+
+.product__container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.product__path {
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: $dark-beige-text;
+  margin-top: 42px;
+}
+
+.product__path-item {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.product__card {
+  display: flex;
+  padding-top: 60px;
+}
+
+.product__photo-frame {
+  // color: green;
+  position: relative;
+  width: 353px;
+  height: 425px;
+  border: 6px solid $grey-border;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  img {
+    position: absolute;
+    left: 50%;
+    bottom: 64px;
+    transform: translateX(-50%);
+  }
+
+  .product__increase::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/lens-icon.svg") $dark-beige-text center no-repeat;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .product__compare::before {
+    content: "";
+    width: 30px;
+    height: 20px;
+    display: block;
+    background: url("../img/compare.svg") top left no-repeat;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
