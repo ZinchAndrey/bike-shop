@@ -82,3 +82,44 @@
 //   //временно
 //   width: 400px;
 // }
+
+@media (max-width: 1023px) {
+  .product__container {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+
+  .product__card {
+    height: auto;
+    align-items: center;
+  }
+
+  .product__path {
+    text-align: center;
+  }
+
+  .product__description-head {
+    order: 1;
+  }
+
+  .product__image {
+    order: 2;
+    margin-bottom: 55px;
+  }
+
+  .product__description-info {
+    order: 4;
+  }
+
+  .description-info__button-wrapper {
+    order: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__path {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}

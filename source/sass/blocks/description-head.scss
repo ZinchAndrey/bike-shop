@@ -35,32 +35,36 @@
   margin-right: 10px;
 }
 
-// .description__text {
-//   font-family: $roboto;
-//   font-size: 22px;
-//   line-height: 30px;
-//   letter-spacing: 0.2px;
-//   max-width: 480px;
-//   margin: 0;
-// }
+@media (max-width: 1023px) {
+  .description-head {
+    text-align: center;
+  }
 
-// .description__warranty {
-//   font-size: 14px;
-//   line-height: 18px;
-//   font-family: $roboto;
-//   color: $red;
-//   margin-top: 12px;
-// }
+  .description-head__ratio {
+    justify-content: center;
+  }
+}
 
-// .description__button {
-//   background-color: $red;
-//   color: $beige-background;
-//   min-width: 273px;
+@media (max-width: 767px) {
+  .description-head {
+    margin-left: 2px;
 
-//   span {
-//     padding-left: 32px;
-//     background-image: url("../img/goods-backet-product-card.svg");
-//     background-repeat: no-repeat;
-//     background-position: left center;
-//   }
-// }
+    h2 {
+      font-size: 28px;
+      line-height: 28px;
+      margin-top: -2px;
+      margin-bottom: 10px;
+      letter-spacing: normal;
+    }
+  }
+
+  .description-head__ratio {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .description-head__price {
+    font-size: 28px;
+    margin-top: 6px;
+  }
+}

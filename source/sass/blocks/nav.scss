@@ -16,6 +16,10 @@
 
 .nav__item {
   padding-right: 10px;
+
+  &--active {
+    color: $red;
+  }
 }
 
 .nav__item:last-child {

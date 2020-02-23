@@ -10,7 +10,7 @@
   <title>Седло Brooks B67</title>
 </head>
 <body>
-  <header class="page-header page-header--not-main">
+  <header class="page-header page-header--not-main page-header--product">
     <div class="page-header__container">
       <button class="page-header__menu-button"></button>
       <div class="page-header__logo">
@@ -23,8 +23,8 @@
       </div>
       <div class="page-header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item nav__item--active"><a href="">Велосипеды</a></li>
-          <li class="nav__item"><a href="">Аксессуары</a></li>
+          <li class="nav__item nav__item"><a href="">Велосипеды</a></li>
+          <li class="nav__item--active"><a href="">Аксессуары</a></li>
           <li class="nav__item"><a href="">Запчасти</a></li>
           <li class="nav__item"><a href="">Мастерская</a></li>
           <li class="nav__item"><a href="">Доставка и оплата</a></li>
@@ -36,6 +36,7 @@
           <li class="page-header__user-block-item page-header__user-block-item--user"><a href="#" aria-label="Авторизация"></a></li>
           <li class="page-header__user-block-item page-header__user-block-item--search"><a href="#" aria-label="Поиск"></a></li>
           <li class="page-header__user-block-item page-header__user-block-item--basket"><a href="#" aria-label="Корзина"></a></li>
+          <li class="page-header__user-block-item page-header__user-block-item--compare"><a href="#" aria-label="Сравнение"></a></li>
         </ul>
       </div>
     </div>
@@ -77,6 +78,9 @@
           <div class="product__description-info description-info">
             <p class="description-info__text">В комплекте ключ для регулировки, газета с полезной информацией и рекомендациями по уходу от компании-производителя. Фирменная картонная упаковка.</p>
             <p class="description-info__warranty">Гарантия 1 год</p>
+            <!-- <span href="#" class="description-info__button button"><span>В корзину</span></a> -->
+          </div>
+          <div class="description-info__button-wrapper">
             <a href="#" class="description-info__button button"><span>В корзину</span></a>
           </div>
         </div>
@@ -85,21 +89,27 @@
         <div class="spec__container">
           <ul class="spec__nav-list">
             <li class="spec__nav-item">
-              <button class="button"></button>
+              <button class="button">Подробное описание</button>
             </li>
             <li class="spec__nav-item">
-              <button class="button"></button>
+              <button class="button">Условия гарантии</button>
+            </li>
+            <li class="spec__nav-item spec__nav-item--active">
+              <button class="button">Отзывы</button>
             </li>
             <li class="spec__nav-item">
-              <button class="button"></button>
-            </li>
-            <li class="spec__nav-item">
-              <button class="button"></button>
+              <button class="button">Обзоры</button>
             </li>
           </ul>
           <div class="spec__review">
-            <div class="spec__review-date"></div>
-            <div class="spec__review-ratio"></div>
+            <div class="spec__review-date">JawPike 18 / 03 / 2018</div>
+            <div class="spec__review-ratio">
+              <img src="img/star-icon.svg" alt="Рейтинг" width="14" height="13">
+              <img src="img/star-icon.svg" alt="Рейтинг" width="14" height="13">
+              <img src="img/star-icon.svg" alt="Рейтинг" width="14" height="13">
+              <img src="img/star-icon.svg" alt="Рейтинг" width="14" height="13">
+              <img src="img/star-icon.svg" alt="Рейтинг" width="14" height="13">
+            </div>
             <div class="spec__review-text">
               <h3>Лучшее, что могло придумать человечество</h3>
               <p>Это седло заменило мне женщину. Ни о чем не жалею.</p>
