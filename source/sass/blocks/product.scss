@@ -25,6 +25,7 @@
 
 .product__card {
   display: flex;
+  justify-content: space-between;
   padding-top: 60px;
 }
 
@@ -65,9 +66,14 @@
     position: absolute;
     bottom: 7px;
     right: 7px;
-
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
+}
+
+.product__description {
+  width: 635px;
+}
+
+.product__image {
+  //временно
+  flex-basis: 485px;
 }
