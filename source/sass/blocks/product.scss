@@ -6,7 +6,7 @@
 
 .product__container {
   max-width: 1120px;
-  margin: 0 auto;
+  margin: 0 auto 105px;
 }
 
 .product__path {
@@ -16,6 +16,7 @@
   letter-spacing: 0.2px;
   color: $dark-beige-text;
   margin-top: 42px;
+  margin-bottom: 60px;
 }
 
 .product__path-item {
@@ -25,8 +26,12 @@
 
 .product__card {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  // padding-top: 60px;
+  height: 425px;
   justify-content: space-between;
-  padding-top: 60px;
 }
 
 .product__photo-frame {
@@ -73,7 +78,7 @@
   width: 635px;
 }
 
-.product__image {
-  //временно
-  flex-basis: 485px;
-}
+// .product__image {
+//   //временно
+//   width: 400px;
+// }
