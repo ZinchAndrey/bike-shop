@@ -30,3 +30,35 @@
     background-image: url("../img/inst.svg");
   }
 }
+
+.social-block__list--dark {
+  .social-block__item {
+    &--vk a::before {
+      background-image: url("../img/vk-promo.svg");
+    }
+
+    &--facebook a::before {
+      background-image: url("../img/fb-promo.svg");
+    }
+
+    &--instagram a::before {
+      background-image: url("../img/inst-promo.svg");
+    }
+  }
+}
+
+.social-block__list--light-dark {
+  .social-block__item {
+    &--vk a::before {
+      background-image: url("../img/vk-dark.svg");
+    }
+
+    &--facebook a::before {
+      background-image: url("../img/fb-dark.svg");
+    }
+
+    &--instagram a::before {
+      background-image: url("../img/inst-dark.svg");
+    }
+  }
+}
