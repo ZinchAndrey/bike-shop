@@ -26,11 +26,13 @@
 
       @media (max-width: 1023px) {
         width: auto;
+        margin-right: 0;
       }
     }
 
     .page-header__user-block-item {
       position: relative;
+
       &--compare a::before {
         background-image: url("../img/compare.svg");
         background-size: 28px 14px;

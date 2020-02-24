@@ -23,7 +23,7 @@
 .description-info__button {
   background-color: $red;
   color: $beige-background;
-  min-width: 273px;
+  width: 273px;
 
   span {
     padding-left: 32px;
@@ -41,5 +41,27 @@
     p {
       text-align: center;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .description-info {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .description-info__button {
+    width: 200px;
+    height: 52px;
+    line-height: 32px;
+  }
+
+  .description-info__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .description-info__warranty {
+    margin-bottom: 29px;
   }
 }

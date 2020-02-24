@@ -122,4 +122,17 @@
     margin-top: 10px;
     margin-bottom: 40px;
   }
+
+  .product__photo-frame {
+    width: 240px;
+    height: 280px;
+
+    .product__increase::before {
+      bottom: 3px;
+    }
+  }
+
+  .product__image {
+    margin-bottom: 45px;
+  }
 }
