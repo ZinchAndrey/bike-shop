@@ -6,6 +6,7 @@
 
 .spec__nav-list {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1090px;
 }
 
@@ -30,10 +31,11 @@
 }
 
 .spec__review {
-  max-width: 1090px;
+  width: 100%;
   padding: 50px 50px 60px;
   border: 1px solid $dark-beige-text;
   border-top: none;
+  order: 5;
 }
 
 .spec__review-date {
@@ -104,6 +106,7 @@
     border: none;
     padding: 15px;
     padding-top: 19px;
+    order: 0;
   }
 }
 
