@@ -17,3 +17,13 @@ $red: #ba4f4f;
   background-color: inherit;
   padding: 0;
 }
+
+@mixin hover-effect() {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

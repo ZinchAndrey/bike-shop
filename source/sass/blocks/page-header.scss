@@ -5,6 +5,10 @@
   width: 100%;
   z-index: 2;
 
+  a {
+    @include hover-effect;
+  }
+
   &--not-main {
     background-color: $light-beige-background;
     position: unset;
@@ -94,6 +98,8 @@
 }
 
 .page-header__user-block-item {
+  @include hover-effect;
+
   a::before {
     content: "";
     background-repeat: no-repeat;
@@ -101,6 +107,8 @@
     background-position: center;
     width: 24px;
     height: 24px;
+
+    // @include hover-effect;
   }
 
   &--user a::before {

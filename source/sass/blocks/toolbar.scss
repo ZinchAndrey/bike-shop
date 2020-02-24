@@ -20,6 +20,10 @@
   border-bottom: 1px solid $golden-text;
   border-top: 1px solid $golden-text;
   padding: 18px 0;
+
+  a {
+    @include hover-effect;
+  }
 }
 
 .toolbar__amount-list-contaner {
@@ -79,6 +83,10 @@
   margin-left: 27px;
   justify-content: space-between;
   align-items: center;
+}
+
+.toolbar__showing-type-item {
+  @include hover-effect;
 }
 
 .toolbar__showing-type-link::before {

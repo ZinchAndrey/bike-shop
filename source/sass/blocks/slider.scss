@@ -57,6 +57,16 @@
       margin: 0 auto;
       outline: 10px solid $light-beige-background;
       background-color: $light-beige-background;
+
+      &:hover {
+        opacity: 1;
+        color: lighten($brown-text, 20%);
+      }
+
+      &:active {
+        opacity: 1;
+        color: lighten($brown-text, 30%);
+      }
     }
   }
 }

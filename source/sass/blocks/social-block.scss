@@ -7,6 +7,8 @@
 }
 
 .social-block__item {
+  @include hover-effect;
+
   a::before {
     content: "";
     display: block;

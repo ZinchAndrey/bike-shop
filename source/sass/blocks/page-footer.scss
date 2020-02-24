@@ -4,6 +4,10 @@
   color: $golden-text;
   width: 100%;
 
+  a {
+    @include hover-effect;
+  }
+
   &--not-main {
     position: unset;
     background-color: $light-beige-background;

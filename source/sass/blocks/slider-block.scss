@@ -55,6 +55,16 @@
   }
 }
 
+.slider-block__basket {
+  &:hover::before {
+    background-color: lighten($red, 5%);
+  }
+
+  &:active::before {
+    background-color: lighten($red, 10%);
+  }
+}
+
 .slider-block__list {
   list-style: none;
   padding: 0;
