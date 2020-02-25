@@ -72,26 +72,23 @@
 }
 
 .sidebar__legend-button {
-  // display: flex;
   width: 100%;
   padding-left: 0;
   padding-right: 15px;
   text-align: left;
   color: inherit;
-  // justify-content: space-between;
-
   border: none;
   background: url("../img/accordion-open.svg") no-repeat right;
   background-color: none;
-}
 
-// .sidebar__legend-wrapper button {
-//   border: none;
-//   width: 15px;
-//   height: 15px;
-//   background: url("../img/accordion-open.svg") no-repeat right;
-//   background-color: none;
-// }
+  &:focus {
+    outline: none;
+  }
+
+  &--closed {
+    background-image: url("../img/accordion-close.svg");
+  }
+}
 
 @media (max-width: 767px) {
   .sidebar {
