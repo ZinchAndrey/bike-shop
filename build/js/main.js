@@ -15,6 +15,7 @@ filterCloseButton.addEventListener('click', function () {
   sidebar.classList.toggle('sidebar--closed');
 });
 
+// открытие / закрытие аккордеона
 var filterName = document.querySelectorAll('.sidebar__legend-button');
 
 for (var i = 0; i < filterName.length; i++) {
