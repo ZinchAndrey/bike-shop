@@ -15,10 +15,11 @@ filterCloseButton.addEventListener('click', function () {
   sidebar.classList.toggle('sidebar--closed');
 });
 
-var filterName = document.querySelector('.sidebar__legend-button');
-// var inputBlock = document.querySelector('.sidebar__input-wrapper');
+var filterName = document.querySelectorAll('.sidebar__legend-button');
 
-filterName.addEventListener('click', function (event) {
-  // console.log(event.target);
-  event.target.parentElement.nextElementSibling.classList.toggle('closed');
-});
+for (var i = 0; i < filterName.length; i++) {
+  filterName[i].addEventListener('click', function (event) {
+    event.target.parentElement.nextElementSibling.classList.toggle('closed');
+  });
+}
+
