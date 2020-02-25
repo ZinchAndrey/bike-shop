@@ -71,19 +71,27 @@
   display: none;
 }
 
-.sidebar__legend-wrapper {
-  display: flex;
+.sidebar__legend-button {
+  // display: flex;
   width: 100%;
-  justify-content: space-between;
-}
+  padding-left: 0;
+  padding-right: 15px;
+  text-align: left;
+  color: inherit;
+  // justify-content: space-between;
 
-.sidebar__legend-wrapper button {
   border: none;
-  width: 15px;
-  height: 15px;
-  background: url("../img/accordion-open.svg") no-repeat center;
+  background: url("../img/accordion-open.svg") no-repeat right;
   background-color: none;
 }
+
+// .sidebar__legend-wrapper button {
+//   border: none;
+//   width: 15px;
+//   height: 15px;
+//   background: url("../img/accordion-open.svg") no-repeat right;
+//   background-color: none;
+// }
 
 @media (max-width: 767px) {
   .sidebar {
@@ -92,6 +100,10 @@
     background-color: $grey-border;
     width: 305px;
     top: -40px;
+
+    &--closed {
+      display: none;
+    }
 
     form {
       width: 212px;
@@ -118,13 +130,21 @@
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid $dark-beige-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     a {
-      display: inline-block;
-      width: 100%;
-      padding: 5px 20px 5px 0;
-      background: url("../img/close-icon-mob.svg") no-repeat right;
+      padding: 5px 0 5px 0;
     }
+  }
+
+  .sidebar__close-button {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: url("../img/close-icon-mob.svg") no-repeat center;
+    background-color: none;
   }
 
   .sidebar__select-block {
