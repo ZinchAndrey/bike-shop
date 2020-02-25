@@ -20,6 +20,7 @@ var filterName = document.querySelectorAll('.sidebar__legend-button');
 
 for (var i = 0; i < filterName.length; i++) {
   filterName[i].addEventListener('click', function (event) {
+    event.preventDefault();
     event.target.parentElement.nextElementSibling.classList.toggle('closed');
   });
 }
