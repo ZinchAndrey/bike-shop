@@ -130,11 +130,12 @@
 @media (max-width: 1023px) {
   .page-header__container {
     padding: 15px;
+    position: relative;
   }
 
-  .page-header__nav {
-    display: none;
-  }
+  // .page-header__nav {
+  //   display: none;
+  // }
 
   .page-header__menu-button {
     display: inherit;
