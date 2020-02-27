@@ -17,7 +17,7 @@
 
 .sidebar fieldset {
   border: none;
-  padding: 0 0 4px;
+  padding: 0;
   border-bottom: 1px solid $dark-beige-text;
   margin-left: 0;
   margin-right: 0;
@@ -32,7 +32,7 @@
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.04em;
-  padding: 16px 0;
+  padding: 16px 0 12px;
   width: 100%;
 }
 
@@ -43,7 +43,7 @@
   letter-spacing: 0.2px;
   display: block;
   position: relative;
-  padding: 0 0 10px 27px;
+  padding: 0 0 11px 27px;
 
   cursor: pointer;
 
@@ -135,6 +135,11 @@
     a {
       padding: 5px 0 5px 0;
     }
+  }
+
+  .sidebar .price-scale {
+    border-top: 1px solid $dark-beige-text;
+    padding-top: 29px;
   }
 
   .sidebar__close-button {

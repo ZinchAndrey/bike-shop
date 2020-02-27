@@ -26,6 +26,16 @@
   .catalog {
     padding-top: 30px;
     position: relative;
+
+    // &--no-js {
+    //   .catalog__container {
+    //     flex-wrap: wrap;
+    //   }
+
+    //   .catalog__sidebar {
+    //     position: unset;
+    //   }
+    // }
   }
 
   .catalog__container {

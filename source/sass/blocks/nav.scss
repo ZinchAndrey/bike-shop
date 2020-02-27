@@ -38,12 +38,30 @@
 @media (max-width: 1023px) {
   .nav {
     position: absolute;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 304px;
     height: 568px;
     background-color: $grey-border;
     padding: 0;
+    // временно
+    // display: none;
+
+    // &--no-js {
+    //   position: unset;
+    //   width: auto;
+    //   height: auto;
+
+    //   .nav__list {
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //   }
+
+    //   .nav__item {
+    //     margin-right: 20px;
+    //   }
+    // }
   }
 
   .nav__user {
