@@ -52,10 +52,13 @@
     width: 33%;
     text-align: center;
   }
+
+  .page-footer__confidence {
+    text-align: end;
+  }
 }
 
 .page-footer__confidence {
-  text-align: end;
   font-family: $roboto;
   font-size: 14px;
   line-height: 18px;
@@ -91,6 +94,10 @@
 
     div {
       width: auto;
+    }
+
+    .page-footer__confidence {
+      text-align: center;
     }
   }
 
