@@ -45,23 +45,15 @@
     height: 568px;
     background-color: $grey-border;
     padding: 0;
-    // временно
-    // display: none;
 
-    // &--no-js {
-    //   position: unset;
-    //   width: auto;
-    //   height: auto;
+    &--closed {
+      display: none;
+    }
 
-    //   .nav__list {
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //   }
-
-    //   .nav__item {
-    //     margin-right: 20px;
-    //   }
-    // }
+    &--no-js {
+      position: relative;
+      order: -1;
+    }
   }
 
   .nav__user {
