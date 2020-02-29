@@ -27,6 +27,9 @@
 
   button {
     border: none;
+    cursor: pointer;
+    padding-left: 0;
+    letter-spacing: 0.04em;
 
     @include hover-effect;
 
@@ -62,6 +65,7 @@
   background-color: transparent;
   color: inherit;
   cursor: pointer;
+  letter-spacing: 0.04em;
 }
 
 .toolbar__item-link {
