@@ -12,9 +12,9 @@
 <body>
   <header class="page-header">
     <div class="page-header__container">
-      <button class="page-header__menu-button"></button>
+      <button class="page-header__menu-button" aria-label="Меню"></button>
       <div class="page-header__logo">
-        <a href="#">
+        <a href="#" aria-label="Главная страница">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-desktop@2x.png">
               <img src="img/logo-mobile@2x.png" alt="Логотип Bike Shop">
@@ -22,11 +22,10 @@
         </a>
       </div>
       <div class="page-header__nav nav nav--no-js">
-        <!-- вставить на другие страницы  -->
         <div class="nav__user">
-          <button class="nav__button-close"></button>
+          <button class="nav__button-close" aria-label="Выход из меню"></button>
           <a href="#" class="nav__user-link">Михаил Иванов</a>
-          <button class="nav__button-exit"></button>
+          <button class="nav__button-exit" aria-label="Выход из профиля"></button>
         </div>
         <ul class="nav__list">
           <li class="nav__item"><a href="catalog.html">Велосипеды</a></li>
@@ -35,7 +34,6 @@
           <li class="nav__item"><a href="">Мастерская</a></li>
           <li class="nav__item"><a href="">Доставка и оплата</a></li>
           <li class="nav__item"><a href="">Контакты</a></li>
-          <!-- вставить на другие страницы  -->
           <li class="nav__item nav__item--basket"><a href="">Корзина (1)</a></li>
           <li class="nav__item nav__item--search"><a href="">Поиск</a></li>
         </ul>
@@ -91,7 +89,7 @@
       </div>
       <div class="slider__link-wrapper">
         <div class="slider__link-block">
-          <a href="#" class="slider__link button">Все велосипеды</a>
+          <a href="catalog.html" class="slider__link button">Все велосипеды</a>
         </div>
       </div>
     </section>
@@ -180,7 +178,7 @@
           </ul>
         </div>
         <div class="page-footer__logo">
-          <a href="#">
+          <a href="#" aria-label="Главная страница">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-desktop@2x.png">
                 <img src="img/logo-mobile@2x.png" alt="Логотип Bike Shop">

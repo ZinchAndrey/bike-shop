@@ -12,9 +12,9 @@
 <body>
   <header class="page-header page-header--not-main">
     <div class="page-header__container">
-      <button class="page-header__menu-button"></button>
+      <button class="page-header__menu-button" aria-label="Кнопка меню"></button>
       <div class="page-header__logo">
-        <a href="index.html">
+        <a href="index.html" aria-label="Главная страница">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-desktop@2x.png">
               <img src="img/logo-mobile@2x.png" alt="Логотип Bike Shop">
@@ -23,9 +23,9 @@
       </div>
       <div class="page-header__nav nav nav--no-js">
         <div class="nav__user">
-          <button class="nav__button-close"></button>
+          <button class="nav__button-close" aria-label="Выход из меню"></button>
           <a href="#" class="nav__user-link">Михаил Иванов</a>
-          <button class="nav__button-exit"></button>
+          <button class="nav__button-exit" aria-label="Выход из профиля"></button>
         </div>
         <ul class="nav__list">
           <li class="nav__item nav__item--active"><a href="">Велосипеды</a></li>
@@ -54,8 +54,8 @@
       <div class="toolbar__container">
         <ul class="toolbar__list">
           <li class="toolbar__item toolbar__item--reset-filters">
-            <a class="toolbar__item-link toolbar__item-link--desktop" href="#">Сбросить фильтры</a>
-            <a class="toolbar__item-link toolbar__item-link--mob" href="#">Фильтры(3)</a>
+            <button class="toolbar__item-link toolbar__item-link--desktop" type="reset" form="filters">Сбросить фильтры</button>
+            <button class="toolbar__item-link toolbar__item-link--mob" type="reset" form="filters">Фильтры(3)</button>
           </li>
           <li class="toolbar__item toolbar__item--sorting">
             <select name="sorting" id="sorting">
@@ -96,7 +96,7 @@
               <option value="">По цене</option>
             </select>
           </div>
-          <form action="#" method="get">
+          <form action="#" method="get" id="filters">
             <fieldset class="price-scale">
               <div class="price-scale__text">
                 <input type="text" placeholder="28 000">
@@ -393,7 +393,7 @@
           </ul>
         </div>
         <div class="page-footer__logo">
-          <a href="#">
+          <a href="#" aria-label="Главная страница">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-desktop-dark@2x.png">
                 <img src="img/logo-mobile@2x.png" alt="Логотип Bike Shop">

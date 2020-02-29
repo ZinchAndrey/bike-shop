@@ -24,6 +24,16 @@
   a {
     @include hover-effect;
   }
+
+  button {
+    border: none;
+
+    @include hover-effect;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .toolbar__amount-list-contaner {
