@@ -132,8 +132,17 @@
     justify-content: space-between;
     align-items: center;
 
-    a {
+    button {
+      @include hover-effect;
+
       padding: 5px 0 5px 0;
+      border: none;
+      color: $red;
+      background-color: inherit;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 
