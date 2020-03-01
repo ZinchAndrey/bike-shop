@@ -74,10 +74,22 @@
 .slider--details {
   .slider__text-container {
     margin-bottom: 65px;
+
+    h2 {
+      font-weight: normal;
+    }
   }
 
   .slider__link-wrapper {
     margin-top: 25px;
+  }
+}
+
+.slider--product-card {
+  padding-bottom: 28px;
+
+  .slider__text-container {
+    margin-bottom: 80px;
   }
 }
 
