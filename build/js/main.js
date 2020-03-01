@@ -66,6 +66,18 @@ if (colorButton) {
   }
 }
 
+// слайдер slick
+
+$('.slider-block__list').slick({
+  centerMode: true,
+  centerPadding: '200px',
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  arrows: true,
+  infinite: true,
+});
+$('.slider-block__list').slick('slickSetOption', 'slidesToScroll', 3, true);
+
 // eslint-disable-next-line no-unused-vars
 // var swiper = new Swiper('.swiper-container', { // eslint-disable-line no-undef
 //   slidesPerView: 3,

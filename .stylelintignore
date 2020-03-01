@@ -1,2 +1,4 @@
 source/sass/normalize.scss
-source/sass/blocks/slider/swiper.scss
+source/sass/blocks/slider/slick-theme.scss
+source/sass/blocks/slider/slick.scss
+
