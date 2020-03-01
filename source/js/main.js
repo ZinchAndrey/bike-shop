@@ -68,7 +68,7 @@ if (colorButton) {
 
 // слайдер slick
 
-$('.slider-block__list').slick({
+$('.slider-block__list--bikes').slick({ // eslint-disable-line no-undef
   centerMode: true,
   centerPadding: '200px',
   slidesToShow: 3,
@@ -76,7 +76,17 @@ $('.slider-block__list').slick({
   arrows: true,
   infinite: true,
 });
-$('.slider-block__list').slick('slickSetOption', 'slidesToScroll', 3, true);
+$('.slider-block__list--bikes').slick('slickSetOption', 'slidesToScroll', 3, true); // eslint-disable-line no-undef
+
+$('.slider-block__list--details').slick({ // eslint-disable-line no-undef
+  centerMode: true,
+  centerPadding: '120px',
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  arrows: true,
+  infinite: true,
+});
+$('.slider-block__list--details').slick('slickSetOption', 'slidesToScroll', 4, true); // eslint-disable-line no-undef
 
 // eslint-disable-next-line no-unused-vars
 // var swiper = new Swiper('.swiper-container', { // eslint-disable-line no-undef
