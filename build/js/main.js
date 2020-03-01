@@ -66,7 +66,8 @@ if (colorButton) {
   }
 }
 
-var swiper = new Swiper('.swiper-container', {
+// eslint-disable-next-line no-unused-vars
+var swiper = new Swiper('.swiper-container', { // eslint-disable-line no-undef
   slidesPerView: 4,
   spaceBetween: 32,
   slidesPerGroup: 3,
