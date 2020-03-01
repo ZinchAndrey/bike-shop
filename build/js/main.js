@@ -67,15 +67,22 @@ if (colorButton) {
 }
 
 // eslint-disable-next-line no-unused-vars
-var swiper = new Swiper('.swiper-container', { // eslint-disable-line no-undef
-  slidesPerView: 4,
-  spaceBetween: 32,
-  slidesPerGroup: 3,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  centeredSlides: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// var swiper = new Swiper('.swiper-container', { // eslint-disable-line no-undef
+//   slidesPerView: 3,
+//   spaceBetween: 32,
+//   slidesPerGroup: 3,
+//   loop: true,
+//   loopFillGroupWithBlank: true,
+//   centeredSlides: true,
+//   // loopedSlides: 4,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   // breakpoints: {
+//   //   768: {
+//   //     slidesPerView: 1,
+//   //     slidesPerGroup: 1,
+//   //   }
+//   // }
+// });
