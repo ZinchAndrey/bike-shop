@@ -80,7 +80,7 @@ $('.slider-block__list--bikes').slick({ // eslint-disable-line no-undef
       breakpoint: 1250,
       settings: {
         centerPadding: '50px',
-        // slidesToShow: 3
+        slidesToShow: 3
       }
     },
     {
@@ -106,8 +106,8 @@ $('.slider-block__list--bikes').slick('slickSetOption', 'slidesToScroll', 3, tru
 
 // слайдер с аксессуарами
 $('.slider-block__list--details').slick({ // eslint-disable-line no-undef
-  centerMode: true,
-  centerPadding: '120px',
+  // centerMode: true,
+  centerPadding: '200px',
   slidesToShow: 4,
   slidesToScroll: 4,
   arrows: true,

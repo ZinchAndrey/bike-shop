@@ -1,3 +1,16 @@
+.slick-slider {
+  // position: relative;
+  // opacity: 0.5;
+}
+
+.slick-list {
+  // position: relative;
+  // z-index: 2;
+  // opacity: 1;
+  overflow: visible;
+  padding: 0 150px;
+}
+
 .slick-arrow {
   top: 110px;
   width: 15px;
@@ -33,6 +46,7 @@
 
 .slick-slide {
   opacity: 0.1;
+  transition: opacity 0s linear 0.5s;
 
   // &[data-slick-index="0"],
   // &[data-slick-index="-1"],
@@ -45,6 +59,10 @@
   //     opacity: 0.1;
   //   }
   // }
+}
+
+.slick-active {
+  opacity: 1;
 }
 
 .slick-center {
