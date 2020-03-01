@@ -84,7 +84,7 @@ $('.slider-block__list--bikes').slick({ // eslint-disable-line no-undef
       }
     },
     {
-      breakpoint: 1023,
+      breakpoint: 1024,
       settings: {
         centerPadding: '100px',
         slidesToScroll: 2,

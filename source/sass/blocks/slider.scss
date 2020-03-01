@@ -74,6 +74,11 @@
 }
 
 .slider--details {
+  .slider-block__wrapper img {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+  }
+
   .slider__text-container {
     margin-bottom: 65px;
 

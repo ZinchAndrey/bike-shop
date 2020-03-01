@@ -1,14 +1,21 @@
-// .slick-slider {
-//   // position: relative;
-//   // opacity: 0.5;
-// }
-
 .slick-list {
-  // position: relative;
-  // z-index: 2;
-  // opacity: 1;
   overflow: visible;
   padding: 0 150px;
+}
+
+.slider--details .slick-list {
+  padding: 0 120px;
+}
+
+.slider--details .slick-list,
+.slick-list {
+  @media (max-width: 600px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0;
+  }
 }
 
 .slick-arrow {
@@ -46,19 +53,7 @@
 
 .slick-slide {
   opacity: 0.1;
-  transition: opacity 0s linear 0.5s;
-
-  // &[data-slick-index="0"],
-  // &[data-slick-index="-1"],
-  // &[data-slick-index="1"] {
-  //   opacity: 1;
-  // }
-
-  // @media (max-width: 1023px) {
-  //   &[data-slick-index="1"] {
-  //     opacity: 0.1;
-  //   }
-  // }
+  transition: opacity 0s linear 0.35s;
 }
 
 .slick-active {
