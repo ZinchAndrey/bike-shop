@@ -67,7 +67,7 @@ if (colorButton) {
 }
 
 // слайдер slick
-
+// слайдер с великами
 $('.slider-block__list--bikes').slick({ // eslint-disable-line no-undef
   centerMode: true,
   centerPadding: '200px',
@@ -75,9 +75,36 @@ $('.slider-block__list--bikes').slick({ // eslint-disable-line no-undef
   slidesToScroll: 3,
   arrows: true,
   infinite: true,
+  responsive: [
+    {
+      breakpoint: 1250,
+      settings: {
+        centerPadding: '50px',
+        // slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 1023,
+      settings: {
+        centerPadding: '100px',
+        slidesToScroll: 2,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerPadding: '0px',
+        slidesToScroll: 1,
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 $('.slider-block__list--bikes').slick('slickSetOption', 'slidesToScroll', 3, true); // eslint-disable-line no-undef
 
+
+// слайдер с аксессуарами
 $('.slider-block__list--details').slick({ // eslint-disable-line no-undef
   centerMode: true,
   centerPadding: '120px',
@@ -85,6 +112,31 @@ $('.slider-block__list--details').slick({ // eslint-disable-line no-undef
   slidesToScroll: 4,
   arrows: true,
   infinite: true,
+  responsive: [
+    {
+      breakpoint: 1250,
+      settings: {
+        centerPadding: '50px',
+        // slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 1023,
+      settings: {
+        centerPadding: '100px',
+        slidesToScroll: 2,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerPadding: '0px',
+        slidesToScroll: 1,
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 $('.slider-block__list--details').slick('slickSetOption', 'slidesToScroll', 4, true); // eslint-disable-line no-undef
 

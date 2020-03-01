@@ -33,8 +33,34 @@
 
 .slick-slide {
   opacity: 0.1;
+
+  // &[data-slick-index="0"],
+  // &[data-slick-index="-1"],
+  // &[data-slick-index="1"] {
+  //   opacity: 1;
+  // }
+
+  // @media (max-width: 1023px) {
+  //   &[data-slick-index="1"] {
+  //     opacity: 0.1;
+  //   }
+  // }
 }
 
-.slick-active {
+.slick-center {
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .slick-arrow {
+    top: 250px;
+  }
+
+  .slick-prev {
+    left: 15px;
+  }
+
+  .slick-next {
+    right: 15px;
+  }
 }
