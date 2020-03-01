@@ -69,7 +69,7 @@ if (colorButton) {
 // слайдер slick
 // слайдер с великами
 $('.slider-block__list--bikes').slick({ // eslint-disable-line no-undef
-  centerMode: true,
+  // centerMode: true,
   centerPadding: '200px',
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -101,7 +101,7 @@ $('.slider-block__list--bikes').slick({ // eslint-disable-line no-undef
     }
   ]
 });
-$('.slider-block__list--bikes').slick('slickSetOption', 'slidesToScroll', 3, true); // eslint-disable-line no-undef
+// $('.slider-block__list--bikes').slick('slickSetOption', 'slidesToScroll', 3, true); // eslint-disable-line no-undef
 
 
 // слайдер с аксессуарами
@@ -138,25 +138,4 @@ $('.slider-block__list--details').slick({ // eslint-disable-line no-undef
     }
   ]
 });
-$('.slider-block__list--details').slick('slickSetOption', 'slidesToScroll', 4, true); // eslint-disable-line no-undef
-
-// eslint-disable-next-line no-unused-vars
-// var swiper = new Swiper('.swiper-container', { // eslint-disable-line no-undef
-//   slidesPerView: 3,
-//   spaceBetween: 32,
-//   slidesPerGroup: 3,
-//   loop: true,
-//   loopFillGroupWithBlank: true,
-//   centeredSlides: true,
-//   // loopedSlides: 4,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   // breakpoints: {
-//   //   768: {
-//   //     slidesPerView: 1,
-//   //     slidesPerGroup: 1,
-//   //   }
-//   // }
-// });
+// $('.slider-block__list--details').slick('slickSetOption', 'slidesToScroll', 4, true); // eslint-disable-line no-undef
