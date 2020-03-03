@@ -1,0 +1,32 @@
+//шрифты
+$roboto: "Roboto Regular", "Arial", sans-serif;
+$hagin-caps-medium: "Hagin Caps Medium", "Arial", sans-serif;
+
+// цвета
+$beige-background: #e9e1d5;
+$dark-beige-text: #9b8869;
+$light-beige-background: #e9e1d5;
+$grey-border: #f0ede8;
+$golden-text: #baa480;
+$brown-text: #817155;
+$black-opacity-background: rgba(26, 25, 24, 0.8);
+$red: #ba4f4f;
+$black: #333232;
+$brown: #7e5b48;
+$golden: #d5b688;
+
+@mixin button-style-none() {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+@mixin hover-effect() {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,141 @@
+.toolbar {
+  color: $dark-beige-text;
+  background-color: $light-beige-background;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+.toolbar__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.toolbar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $golden-text;
+  border-top: 1px solid $golden-text;
+  padding: 18px 0;
+
+  a {
+    @include hover-effect;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    padding-left: 0;
+    letter-spacing: 0.04em;
+
+    @include hover-effect;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.toolbar__amount-list-contaner {
+  display: flex;
+  min-width: 230px;
+  justify-content: space-between;
+}
+
+.toolbar__amount-list {
+  display: flex;
+  min-width: 120px;
+  justify-content: space-around;
+
+  li {
+    border-right: 1px solid $golden-text;
+    padding: 0 10px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.toolbar__item select {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+}
+
+.toolbar__item-link {
+  color: $red;
+  padding-right: 20px;
+  background: url("../img/close-icon.svg") no-repeat right;
+}
+
+.toolbar__item-link--mob {
+  display: none;
+}
+
+.toolbar__item--sorting {
+  margin-right: auto;
+  margin-left: 135px;
+
+  @media (max-width: 1023px) {
+    margin-left: 75px;
+  }
+}
+
+.toolbar__item--showing {
+  display: flex;
+}
+
+.toolbar__showing-type-list {
+  display: flex;
+  width: 35px;
+  margin-left: 27px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar__showing-type-item {
+  @include hover-effect;
+}
+
+.toolbar__showing-type-link::before {
+  content: "";
+  width: 12px;
+  height: 11px;
+  background: no-repeat center;
+  display: block;
+}
+
+.toolbar__showing-type-link--table::before {
+  background-image: url("../img/table-icon.svg");
+}
+
+.toolbar__showing-type-link--list::before {
+  background-image: url("../img/list-icon.svg");
+}
+
+@media (max-width: 767px) {
+  .toolbar__container {
+    padding: 0 15px;
+  }
+
+  .toolbar__list {
+    padding: 10px 0;
+  }
+
+  .toolbar__item-link--desktop,
+  .toolbar__amount-list-contaner,
+  .toolbar__item--sorting {
+    display: none;
+  }
+
+  .toolbar__item-link--mob {
+    display: inherit;
+    background-image: none;
+  }
+}

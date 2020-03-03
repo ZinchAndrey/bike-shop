@@ -1,3 +1,26 @@
-body {
-    background: red;
-}
+@import "normalize.scss";
+@import "base.scss";
+@import "variables.scss";
+// слайдер
+@import "blocks/slider/slick.scss";
+@import "blocks/slider/slick-theme.scss";
+@import "blocks/slider/slick-settings.scss";
+//
+@import "blocks/page-header.scss";
+@import "blocks/button.scss";
+@import "blocks/nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/social-block.scss";
+@import "blocks/slider.scss";
+@import "blocks/slider-block.scss";
+@import "blocks/info.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/toolbar.scss";
+@import "blocks/sidebar.scss";
+@import "blocks/price-scale.scss";
+@import "blocks/catalog.scss";
+@import "blocks/pages.scss";
+@import "blocks/product.scss";
+@import "blocks/description-head.scss";
+@import "blocks/description-info.scss";
+@import "blocks/spec.scss";

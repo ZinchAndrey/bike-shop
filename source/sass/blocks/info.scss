@@ -1,0 +1,155 @@
+.info {
+  background-image: url("../img/workshop-background@1x.jpg");
+  min-height: 576px; // временно
+  background-size: cover;
+  padding: 123px 0 92px;
+}
+
+.info__container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 77%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 1000px;
+  max-width: 1230px;
+}
+
+.info__block {
+  width: 49.3%;
+  margin-top: -5px;
+  margin-left: 35px;
+
+  h2 {
+    color: $golden-text;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: normal;
+    margin: 0 0 22px;
+  }
+
+  p {
+    color: $beige-background;
+    font-family: $roboto;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    font-weight: normal;
+    margin: 0 0 10px;
+  }
+}
+
+.info__link {
+  color: $golden-text;
+  margin-top: 35px;
+}
+
+.info--club {
+  padding-bottom: 300px;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 200px;
+  }
+
+  .info__block {
+    margin: 0 35px 0 -5%;
+
+    @media (max-width: 1100px) {
+      margin: 0 35px 0 0;
+    }
+  }
+
+  .info__link {
+    margin-top: 65px;
+
+    @media (max-width: 1100px) {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .info__container {
+    flex-direction: column-reverse;
+    min-width: auto;
+    width: 100%;
+
+    picture {
+      margin: 0 auto;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .info__block,
+  .info--club .info__block {
+    margin: 0 auto 50px;
+    width: 60%;
+    text-align: center;
+  }
+
+  .info--club {
+    .info__container {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .info--workshop {
+    .info__link {
+      display: none;
+    }
+    padding-bottom: 0;
+  }
+
+  .info {
+    padding-top: 26px;
+
+    .info__container {
+      h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+
+      img {
+        width: 290px;
+        height: 300px;
+      }
+    }
+
+    .info__block {
+      max-width: 350px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .info__link {
+      width: auto;
+      height: 50px;
+      margin-top: 24px;
+      min-width: 196px;
+      padding: 11px;
+      line-height: 30px;
+    }
+  }
+
+  .info--club {
+    padding-bottom: 180px;
+
+    .info__block {
+      margin-bottom: 30px;
+    }
+  }
+}

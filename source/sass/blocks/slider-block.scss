@@ -1,0 +1,135 @@
+.slider-block__wrapper {
+  position: relative;
+  display: flex;
+
+  img {
+    position: absolute;
+    left: 50%;
+    bottom: 64px;
+    transform: translateX(-50%);
+
+    @include hover-effect;
+
+    @media (max-width: 767px) {
+      bottom: 35px;
+    }
+  }
+}
+
+.slider-block__item {
+  // flex-basis: 319px;
+  margin-bottom: 30px;
+}
+
+.slider-block__photo-frame {
+  position: relative;
+  width: 178px;
+  height: 240px;
+  border: 6px solid $grey-border;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  .slider-block__basket::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/goods-backet.svg") $red center no-repeat;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .slider-block__compare::before {
+    content: "";
+    width: 30px;
+    height: 20px;
+    display: block;
+    background: url("../img/compare.svg") top left no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.slider-block__basket {
+  &:hover::before {
+    background-color: lighten($red, 5%);
+  }
+
+  &:active::before {
+    background-color: lighten($red, 10%);
+  }
+}
+
+.slider-block__list {
+  list-style: none;
+  padding: 0;
+  // width: 500px;
+  margin: 0 auto; // временно
+}
+
+.slider-block__goods-description {
+  text-align: center;
+  width: 230px;
+  margin: 40px auto 0;
+  padding: 0;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  p {
+    font-family: $roboto;
+    color: $dark-beige-text;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 15px;
+    margin: 5px 0 12px;
+  }
+
+  .slider-block__goods-price {
+    font-family: $hagin-caps-medium;
+    color: $red;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-block__photo-frame {
+    height: 178px;
+  }
+
+  .slider-block__goods-description {
+    h3 {
+      font-size: 22px;
+    }
+
+    p {
+      margin-bottom: 7px;
+    }
+
+    .slider-block__goods-price {
+      font-size: 22px;
+    }
+  }
+
+  .slider-block__item {
+    margin-bottom: 17px;
+
+    &:nth-child(n + 6) {
+      display: none;
+    }
+  }
+}
