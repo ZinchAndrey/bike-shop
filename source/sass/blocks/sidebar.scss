@@ -44,8 +44,8 @@
   display: block;
   position: relative;
   padding: 0 0 11px 27px;
-
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 
   &::before {
     content: "";

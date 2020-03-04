@@ -21,13 +21,22 @@
   &:last-child {
     border-right: 1px solid lighten($dark-beige-text, 30%);
   }
+
+  &:hover {
+    color: lighten($brown-text, 10%);
+    outline: none;
+  }
 }
 
-.spec__nav-item--active {
+.spec__nav-item.spec__nav-item--active {
   color: $brown-text;
   border-color: $dark-beige-text;
-  border-right: 1px solid;
+  border-right: 1px solid $dark-beige-text;
   border-bottom: none;
+
+  &:hover {
+    color: $brown-text;
+  }
 }
 
 .spec__review {
@@ -36,6 +45,10 @@
   border: 1px solid $dark-beige-text;
   border-top: none;
   order: 5;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .spec__review-date {
@@ -100,6 +113,10 @@
       border-bottom: 1px solid lighten($dark-beige-text, 30%);
       border-right: none;
     }
+  }
+
+  .spec__nav-item.spec__nav-item--active {
+    border-right: none;
   }
 
   .spec__review {
