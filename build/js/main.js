@@ -45,8 +45,10 @@ nav.classList.add('nav--closed');
 menuOpenButton.addEventListener('click', function () {
   nav.classList.remove('nav--closed');
   // закроет сайдбар с фильтрами, если они открыты
-  if (sidebar.classList.contains('sidebar--closed') === false) {
-    sidebar.classList.add('sidebar--closed');
+  if (sidebar) {
+    if (sidebar.classList.contains('sidebar--closed') === false) {
+      sidebar.classList.add('sidebar--closed');
+    }
   }
 });
 
