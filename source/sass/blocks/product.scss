@@ -50,6 +50,10 @@
     left: 50%;
     bottom: 40px;
     transform: translateX(-52%);
+
+    @media (max-width: 1200px) {
+      transform: translateX(-48%);
+    }
   }
 
   .product__increase::before {

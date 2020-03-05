@@ -125,7 +125,7 @@
   }
 
   .toolbar__list {
-    padding: 10px 0;
+    padding: 9px 0;
   }
 
   .toolbar__item-link--desktop,
@@ -136,6 +136,7 @@
 
   .toolbar__item-link--mob {
     display: inherit;
+    line-height: 18px;
     background-image: none;
   }
 }

@@ -24,6 +24,9 @@
 
   &:hover {
     color: lighten($brown-text, 10%);
+  }
+
+  &:focus {
     outline: none;
   }
 }

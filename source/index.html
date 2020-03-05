@@ -251,8 +251,11 @@
     <section class="info info--workshop">
       <div class="info__container">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/master@1x.jpg">
-          <img src="img/master-mobile@1x.jpg" alt="Фото мастера" width="462" height="358">
+          <!-- исправить -->
+          <source media="(min-width: 768px)" srcset="img/master@1x.jpg" type="image/jpeg">
+          <!-- <source media="(min-width: 768px)" srcset="img/master@1x.webp" type="image/webp">
+          <source srcset="img/master-mobile@1x.webp" type="image/webp"> -->
+          <img src="img/master-mobile@1x.jpg" type="image/jpeg" alt="Фото мастера" width="462" height="358">
         </picture>
         <div class="info__block">
           <h2>Мастерская</h2>
@@ -443,7 +446,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/jquery.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/slick.js"></script>
   <script src="js/main.js"></script>
 </body>
