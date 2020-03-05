@@ -252,9 +252,9 @@
       <div class="info__container">
         <picture>
           <!-- исправить -->
+          <source media="(min-width: 768px)" srcset="img/master@1x.webp" type="image/webp">
           <source media="(min-width: 768px)" srcset="img/master@1x.jpg" type="image/jpeg">
-          <!-- <source media="(min-width: 768px)" srcset="img/master@1x.webp" type="image/webp">
-          <source srcset="img/master-mobile@1x.webp" type="image/webp"> -->
+          <source srcset="img/master-mobile@1x.webp" type="image/webp">
           <img src="img/master-mobile@1x.jpg" type="image/jpeg" alt="Фото мастера" width="462" height="358">
         </picture>
         <div class="info__block">
@@ -401,9 +401,11 @@
           <a href="#" class="info__link button">Вступить</a>
         </div>
         <picture>
-          <source media="(min-width: 768px)" srcset="img/club-member@1x.jpg">
-            <img src="img/club-member-mobile@1x.jpg" alt="Фото члена клуба" width="529" height="358">
-          </picture>
+          <source media="(min-width: 768px)" srcset="img/club-member@1x.webp" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/club-member@1x.jpg" type="image/jpeg" >
+          <source srcset="img/club-member-mobile@1x.webp" type="image/webp">
+          <img src="img/club-member-mobile@1x.jpg"  type="image/jpeg" alt="Фото члена клуба" width="529" height="358">
+        </picture>
       </div>
     </section>
   </main>
@@ -446,8 +448,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/slick.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <!-- <script src="js/slick.js"></script> -->
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
