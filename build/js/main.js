@@ -5,6 +5,7 @@ var sidebar = document.querySelector('.sidebar');
 var filters = document.querySelector('.toolbar__item-link--mob');
 var filterCloseButton = document.querySelector('.sidebar__close-button');
 var catalog = document.querySelector('.catalog');
+var product = document.querySelector('.product');
 
 // открытие / закрытие сайдбара с фильтрами
 // убирает сайдбар из потока и закрывает его при включ js
@@ -144,3 +145,24 @@ if (window.jQuery) { // eslint-disable-line no-undef
   });
 }
 // $('.slider-block__list--details').slick('slickSetOption', 'slidesToScroll', 4, true); // eslint-disable-line no-undef
+
+// переключение вкладок в карточке товара
+var tabs = document.querySelectorAll('.spec__nav-item');
+var specs = document.querySelectorAll('.spec__review');
+
+if (product) {
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener('click', function (event) {
+      event.preventDefault();
+      for (i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('spec__nav-item--active');
+      }
+      event.target.classList.add('spec__nav-item--active');
+      for (i = 0; i < specs.length; i++) {
+        specs[i].classList.add('spec__review--closed');
+      }
+      event.target.nextElementSibling.classList.remove('spec__review--closed');
+    });
+  }
+}
+

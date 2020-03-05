@@ -1,7 +1,9 @@
 .nav {
   padding: 0 20px;
-  box-sizing: content-box;
-  width: 740px;
+  // box-sizing: content-box;
+  // width: 740px;
+  box-sizing: border-box;
+  width: 780px;
 }
 
 .nav__user {
@@ -12,6 +14,7 @@
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 18px;
   line-height: 18px;
@@ -19,7 +22,12 @@
 }
 
 .nav__item {
-  // padding-right: 10px;
+  padding-right: 8px;
+
+  &--contacts {
+    padding-right: 0;
+  }
+
   &--active {
     color: $red;
   }

@@ -42,7 +42,7 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/js/**/*.js, !source/js/jquery.js, !source/js/slick.js",
+    "source/js/**/*.js, !source/js/jquery.min.js, !source/js/slick.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}, !source/sass/blocks/slider/slick-theme.scss, !source/sass/blocks/slider/slick.scss"
   ],

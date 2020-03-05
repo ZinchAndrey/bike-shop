@@ -56,7 +56,8 @@
 @media (max-width: 767px) {
   .promo {
     min-height: 568px;
-    // background-position-x: center;
+    background-position: -360px -10px;
+    background-size: 1366px 738px;
   }
 
   .promo__slogan {

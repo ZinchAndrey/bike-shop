@@ -11,7 +11,7 @@
     @include hover-effect;
 
     @media (max-width: 767px) {
-      bottom: 35px;
+      bottom: 30px;
     }
   }
 }
@@ -19,6 +19,10 @@
 .slider-block__item {
   // flex-basis: 319px;
   margin-bottom: 30px;
+}
+
+.slider-block--catalog .slider-block__item {
+  flex-basis: 319px;
 }
 
 .slider-block__photo-frame {
