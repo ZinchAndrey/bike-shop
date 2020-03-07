@@ -45,6 +45,10 @@
     transform: translate(-50%, 50%);
   }
 
+  .slider-block__compare {
+    @include hover-effect;
+  }
+
   .slider-block__compare::before {
     content: "";
     width: 30px;

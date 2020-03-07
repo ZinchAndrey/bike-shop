@@ -9,7 +9,7 @@
   }
 
   &--not-main {
-    position: unset;
+    position: static;
     background-color: $light-beige-background;
     color: $dark-beige-text;
 
@@ -23,6 +23,11 @@
 .page-footer__container {
   margin: 0 auto;
   width: calc(1127 / 1366 * 100%);
+}
+
+.page-footer__logo--main {
+  pointer-events: none;
+  cursor: default;
 }
 
 .page-footer__nav {

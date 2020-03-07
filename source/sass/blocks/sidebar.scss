@@ -98,6 +98,7 @@
     background-color: $grey-border;
     width: 305px;
     top: -40px;
+    height: 100%;
 
     &--closed {
       display: none;
@@ -170,6 +171,10 @@
       cursor: pointer;
       font-size: 18px;
       line-height: 18px;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

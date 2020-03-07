@@ -92,6 +92,11 @@
   width: 184px;
 }
 
+.page-header__logo--main a {
+  pointer-events: none;
+  cursor: default;
+}
+
 .page-header__user-block-list {
   list-style: none;
   padding: 0;

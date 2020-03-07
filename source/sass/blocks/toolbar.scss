@@ -66,6 +66,10 @@
   color: inherit;
   cursor: pointer;
   letter-spacing: 0.04em;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .toolbar__item-link {
