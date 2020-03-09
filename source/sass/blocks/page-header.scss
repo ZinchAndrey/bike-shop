@@ -84,12 +84,21 @@
   align-items: center;
 }
 
+.page-header__nav-container {
+  width: 780px;
+}
+
 .page-header__menu-button {
   display: none;
 }
 
 .page-header__logo img {
   width: 184px;
+}
+
+.page-header__logo--main a {
+  pointer-events: none;
+  cursor: default;
 }
 
 .page-header__user-block-list {
@@ -109,7 +118,7 @@
     background-repeat: no-repeat;
     display: block;
     background-position: center;
-    width: 26px;
+    width: 28px;
     height: 24px;
 
     // @include hover-effect;
@@ -135,6 +144,20 @@
   .page-header__container {
     padding: 15px;
     position: relative;
+  }
+
+  .page-header__nav-container {
+    display: none;
+  }
+
+  .page-header__nav-container--menu-opened {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   // .page-header__nav {

@@ -111,8 +111,9 @@
     text-align: left;
     padding-left: 16px;
     padding-right: 16px;
+    background: url("../img/filter-arrow-closed.svg") no-repeat center right 15px;
 
-    &:last-child {
+    &:last-of-type {
       border-bottom: 1px solid lighten($dark-beige-text, 30%);
       border-right: none;
     }
@@ -120,6 +121,7 @@
 
   .spec__nav-item.spec__nav-item--active {
     border-right: none;
+    background-image: url("../img/filter-arrow-opened.svg");
   }
 
   .spec__review {

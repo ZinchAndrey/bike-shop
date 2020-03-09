@@ -88,15 +88,23 @@
   }
 
   .slider__link-wrapper {
-    margin-top: 25px;
+    margin-top: 29px;
   }
 }
 
 .slider--product-card {
-  padding-bottom: 28px;
+  padding-bottom: 30px;
 
   .slider__text-container {
     margin-bottom: 80px;
+
+    h2 {
+      margin-left: 15px;
+
+      @media (max-width: 767px) {
+        margin-left: 0;
+      }
+    }
   }
 }
 

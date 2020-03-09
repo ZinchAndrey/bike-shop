@@ -4,12 +4,16 @@
   letter-spacing: 0.04em;
   display: inline-block;
   width: 240px;
-  height: 60px;
+  min-height: 60px;
   border: 1px solid $golden-text;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 10px;
+  padding: 9px;
 
   @include hover-effect;
+
+  @media (max-width: 767px) {
+    min-height: 50px;
+  }
 }

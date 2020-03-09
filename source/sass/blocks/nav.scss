@@ -3,7 +3,7 @@
   // box-sizing: content-box;
   // width: 740px;
   box-sizing: border-box;
-  width: 780px;
+  // width: 780px;
 }
 
 .nav__user {
@@ -30,6 +30,7 @@
 
   &--active {
     color: $red;
+    pointer-events: none;
   }
 
   &--basket,
