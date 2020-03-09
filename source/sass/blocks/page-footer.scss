@@ -128,7 +128,7 @@
     text-align: center;
 
     p {
-      white-space: unset;
+      white-space: normal;
     }
 
     span {
@@ -145,6 +145,10 @@
     .page-footer__container {
       padding-top: 30px;
       border-top: 1px solid $dark-beige-text;
+    }
+
+    .page-footer__confidence {
+      color: $golden-text;
     }
   }
 }

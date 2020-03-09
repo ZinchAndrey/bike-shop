@@ -66,6 +66,11 @@
     bottom: -6px;
     left: 50%;
     transform: translate(-50%, 50%);
+    cursor: pointer;
+  }
+
+  .product__increase:hover::before {
+    background-color: lighten($dark-beige-text, 10%);
   }
 
   .product__compare::before {
@@ -77,6 +82,14 @@
     position: absolute;
     bottom: 7px;
     right: 7px;
+  }
+
+  .product__compare:hover::before {
+    opacity: 0.7;
+  }
+
+  .product__compare:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -99,6 +112,9 @@
   border: none;
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
+
+  @include hover-effect;
 
   &:focus {
     outline: none;
