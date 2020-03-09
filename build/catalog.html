@@ -11,7 +11,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Bike Shop Catalog</title>
 </head>
-<body>
+<body class="body-container">
   <header class="page-header page-header--not-main">
     <div class="page-header__container">
       <button class="page-header__menu-button" aria-label="Кнопка меню"></button>
@@ -23,22 +23,24 @@
           </picture>
         </a>
       </div>
-      <div class="page-header__nav nav nav--no-js">
-        <div class="nav__user">
-          <button class="nav__button-close" aria-label="Выход из меню"></button>
-          <a href="#" class="nav__user-link">Михаил Иванов</a>
-          <button class="nav__button-exit" aria-label="Выход из профиля"></button>
+      <div class="page-header__nav-container">
+        <div class="page-header__nav nav nav--no-js">
+          <div class="nav__user">
+            <button class="nav__button-close" aria-label="Выход из меню"></button>
+            <a href="#" class="nav__user-link">Михаил Иванов</a>
+            <button class="nav__button-exit" aria-label="Выход из профиля"></button>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active"><a href="#">Велосипеды</a></li>
+            <li class="nav__item"><a href="#">Аксессуары</a></li>
+            <li class="nav__item"><a href="#">Запчасти</a></li>
+            <li class="nav__item"><a href="#">Мастерская</a></li>
+            <li class="nav__item"><a href="#">Доставка и оплата</a></li>
+            <li class="nav__item"><a href="#">Контакты</a></li>
+            <li class="nav__item nav__item--basket"><a href="#">Корзина (1)</a></li>
+            <li class="nav__item nav__item--search"><a href="#">Поиск</a></li>
+          </ul>
         </div>
-        <ul class="nav__list">
-          <li class="nav__item nav__item--active"><a href="#">Велосипеды</a></li>
-          <li class="nav__item"><a href="#">Аксессуары</a></li>
-          <li class="nav__item"><a href="#">Запчасти</a></li>
-          <li class="nav__item"><a href="#">Мастерская</a></li>
-          <li class="nav__item"><a href="#">Доставка и оплата</a></li>
-          <li class="nav__item"><a href="#">Контакты</a></li>
-          <li class="nav__item nav__item--basket"><a href="#">Корзина (1)</a></li>
-          <li class="nav__item nav__item--search"><a href="#">Поиск</a></li>
-        </ul>
       </div>
       <div class="page-header__user-block">
         <ul class="page-header__user-block-list">

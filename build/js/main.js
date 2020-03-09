@@ -37,6 +37,8 @@ if (catalog) {
 var nav = document.querySelector('.nav');
 var menuCloseButton = document.querySelector('.nav__button-close');
 var menuOpenButton = document.querySelector('.page-header__menu-button');
+var bodyContainer = document.querySelector('.body-container');
+var navContainer = document.querySelector('.page-header__nav-container');
 
 // закрывает меню и убираем его из потока при работающем js
 nav.classList.remove('nav--no-js');
@@ -44,6 +46,8 @@ nav.classList.add('nav--closed');
 
 menuOpenButton.addEventListener('click', function () {
   nav.classList.remove('nav--closed');
+  bodyContainer.classList.add('body-container--menu-opened');
+  navContainer.classList.add('page-header__nav-container--menu-opened');
   // закроет сайдбар с фильтрами, если они открыты
   if (sidebar) {
     if (sidebar.classList.contains('sidebar--closed') === false) {
@@ -54,6 +58,16 @@ menuOpenButton.addEventListener('click', function () {
 
 menuCloseButton.addEventListener('click', function () {
   nav.classList.add('nav--closed');
+  bodyContainer.classList.remove('body-container--menu-opened');
+  navContainer.classList.remove('page-header__nav-container--menu-opened');
+});
+
+navContainer.addEventListener('click', function (event) {
+  if (event.target === event.currentTarget) {
+    nav.classList.add('nav--closed');
+    bodyContainer.classList.remove('body-container--menu-opened');
+    navContainer.classList.remove('page-header__nav-container--menu-opened');
+  }
 });
 
 
