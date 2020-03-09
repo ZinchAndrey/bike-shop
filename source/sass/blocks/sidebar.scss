@@ -99,7 +99,7 @@
     background-color: $grey-border;
     width: 305px;
     top: 57px;
-    height: 100vh;
+    height: calc(100vh - 57px);
 
     &--closed {
       display: none;

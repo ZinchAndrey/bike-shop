@@ -21,6 +21,10 @@
   margin-bottom: 30px;
 }
 
+.slider-block--catalog {
+  width: 100%;
+}
+
 .slider-block--catalog ul.slider-block__list {
   justify-content: flex-start;
 }
@@ -117,7 +121,7 @@
     font-size: 14px;
     line-height: 18px;
     padding: 0 15px;
-    margin: 5px 0 12px;
+    margin: 5px 0 11px;
   }
 
   .slider-block__goods-price {
