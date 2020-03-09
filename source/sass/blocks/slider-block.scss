@@ -30,11 +30,15 @@
 }
 
 .slider-block--catalog .slider-block__item {
-  // flex-basis: 319px;
-  width: (100% / 3);
+  width: 319px;
+  margin-left: -23px;
+  margin-right: 32px;
+  // width: calc(100% / 3 - 20px);
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     width: 50%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (max-width: 830px) {
