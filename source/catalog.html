@@ -87,99 +87,101 @@
     <section class="catalog catalog--no-js">
       <h2 class="visually-hidden">Велосипеды</h2>
       <div class="catalog__container">
-        <div class="catalog__sidebar sidebar">
-          <div class="sidebar__filters-reset">
-            <div class="sidebar__filters-wrapper">
-              <button form="filters">Сбросить фильтры (3)</button>
-              <button class="sidebar__close-button" aria-label="Закрытие сайдбара"></button>
+        <div class="catalog__sidebar-container">
+          <div class="catalog__sidebar sidebar">
+            <div class="sidebar__filters-reset">
+              <div class="sidebar__filters-wrapper">
+                <button form="filters">Сбросить фильтры (3)</button>
+                <button class="sidebar__close-button" aria-label="Закрытие сайдбара"></button>
+              </div>
             </div>
+            <div class="sidebar__select-block">
+              <select name="sorting" id="sorting-mob">
+                <option value="">По популярности</option>
+                <option value="">По цене</option>
+              </select>
+            </div>
+            <form action="#" method="get" id="filters">
+              <fieldset class="price-scale">
+                <div class="price-scale__text">
+                  <input type="number" placeholder="28 000" name="lowest-price">
+                  <span>&mdash;</span>
+                  <input type="number" placeholder="180 000" name="highest-price">
+                </div>
+                <div class="price-scale__wrapper">
+                  <div class="price-scale__bar"></div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                    <button class="sidebar__legend-button">Электровелосипед</button>
+                </legend>
+                <div class="sidebar__input-wrapper">
+                  <input type="radio" name="electrobike" id="electrobike-yes"><label for="electrobike-yes">Да</label>
+                  <input type="radio" name="electrobike" id="electrobike-no"><label for="electrobike-no">Нет</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <button class="sidebar__legend-button">Производитель</button>
+                </legend>
+                <div class="sidebar__input-wrapper">
+                  <input type="checkbox" name="harley" id="harley"><label for="harley">Harley Davidson</label>
+                  <input type="checkbox" name="neuzer" id="neuzer"><label for="neuzer">Neuzer</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <button class="sidebar__legend-button">Материал рамы</button>
+                </legend>
+                <div class="sidebar__input-wrapper">
+                  <input type="checkbox" name="steel" id="steel"><label for="steel">Сталь</label>
+                  <input type="checkbox" name="carbon" id="carbon"><label for="carbon">Карбон</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                    <button class="sidebar__legend-button">Цвет</button>
+                </legend>
+                <div class="sidebar__input-wrapper">
+                  <input type="checkbox" name="black" id="black"><label for="black">Черный</label>
+                  <input type="checkbox" name="brown" id="brown"><label for="brown">Коричневый</label>
+                  <input type="checkbox" name="red" id="red"><label for="red">Красный</label>
+                  <input type="checkbox" name="blue" id="blue"><label for="blue">Голубой</label>
+                  <input type="checkbox" name="khaki" id="khaki"><label for="khaki">Хаки</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <button class="sidebar__legend-button">Размер</button>
+                </legend>
+                <div class="sidebar__input-wrapper">
+                  <input type="checkbox" name="standart-size" id="standart-size"><label for="standart-size">Стандарт</label>
+                  <input type="checkbox" name="king-size" id="king-size"><label for="king-size">King-size</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <button class="sidebar__legend-button">Колеса</button>
+                </legend>
+                <div class="sidebar__input-wrapper">
+                  <input type="checkbox" name="20-inch" id="20-inch"><label for="20-inch">20"</label>
+                  <input type="checkbox" name="22-inch" id="22-inch"><label for="22-inch">22"</label>
+                  <input type="checkbox" name="24-inch" id="24-inch"><label for="24-inch">24"</label>
+                  <input type="checkbox" name="26-inch" id="26-inch"><label for="26-inch">26"</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <button class="sidebar__legend-button">Кол-во скоростей</button>
+                </legend>
+                <div class="sidebar__input-wrapper">
+                  <input type="checkbox" name="4-speed" id="4-speed"><label for="4-speed">4</label>
+                  <input type="checkbox" name="5-speed" id="5-speed"><label for="5-speed">5</label>
+                </div>
+              </fieldset>
+            </form>
           </div>
-          <div class="sidebar__select-block">
-            <select name="sorting" id="sorting-mob">
-              <option value="">По популярности</option>
-              <option value="">По цене</option>
-            </select>
-          </div>
-          <form action="#" method="get" id="filters">
-            <fieldset class="price-scale">
-              <div class="price-scale__text">
-                <input type="number" placeholder="28 000" name="lowest-price">
-                <span>&mdash;</span>
-                <input type="number" placeholder="180 000" name="highest-price">
-              </div>
-              <div class="price-scale__wrapper">
-                <div class="price-scale__bar"></div>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                  <button class="sidebar__legend-button">Электровелосипед</button>
-              </legend>
-              <div class="sidebar__input-wrapper">
-                <input type="radio" name="electrobike" id="electrobike-yes"><label for="electrobike-yes">Да</label>
-                <input type="radio" name="electrobike" id="electrobike-no"><label for="electrobike-no">Нет</label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                <button class="sidebar__legend-button">Производитель</button>
-              </legend>
-              <div class="sidebar__input-wrapper">
-                <input type="checkbox" name="harley" id="harley"><label for="harley">Harley Davidson</label>
-                <input type="checkbox" name="neuzer" id="neuzer"><label for="neuzer">Neuzer</label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                <button class="sidebar__legend-button">Материал рамы</button>
-              </legend>
-              <div class="sidebar__input-wrapper">
-                <input type="checkbox" name="steel" id="steel"><label for="steel">Сталь</label>
-                <input type="checkbox" name="carbon" id="carbon"><label for="carbon">Карбон</label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                  <button class="sidebar__legend-button">Цвет</button>
-              </legend>
-              <div class="sidebar__input-wrapper">
-                <input type="checkbox" name="black" id="black"><label for="black">Черный</label>
-                <input type="checkbox" name="brown" id="brown"><label for="brown">Коричневый</label>
-                <input type="checkbox" name="red" id="red"><label for="red">Красный</label>
-                <input type="checkbox" name="blue" id="blue"><label for="blue">Голубой</label>
-                <input type="checkbox" name="khaki" id="khaki"><label for="khaki">Хаки</label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                <button class="sidebar__legend-button">Размер</button>
-              </legend>
-              <div class="sidebar__input-wrapper">
-                <input type="checkbox" name="standart-size" id="standart-size"><label for="standart-size">Стандарт</label>
-                <input type="checkbox" name="king-size" id="king-size"><label for="king-size">King-size</label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                <button class="sidebar__legend-button">Колеса</button>
-              </legend>
-              <div class="sidebar__input-wrapper">
-                <input type="checkbox" name="20-inch" id="20-inch"><label for="20-inch">20"</label>
-                <input type="checkbox" name="22-inch" id="22-inch"><label for="22-inch">22"</label>
-                <input type="checkbox" name="24-inch" id="24-inch"><label for="24-inch">24"</label>
-                <input type="checkbox" name="26-inch" id="26-inch"><label for="26-inch">26"</label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                <button class="sidebar__legend-button">Кол-во скоростей</button>
-              </legend>
-              <div class="sidebar__input-wrapper">
-                <input type="checkbox" name="4-speed" id="4-speed"><label for="4-speed">4</label>
-                <input type="checkbox" name="5-speed" id="5-speed"><label for="5-speed">5</label>
-              </div>
-            </fieldset>
-          </form>
         </div>
         <div class="catalog__block slider-block slider-block--catalog">
           <ul class="slider-block__list">

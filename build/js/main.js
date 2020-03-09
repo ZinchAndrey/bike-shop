@@ -2,6 +2,7 @@
 
 // сайдбар с фильтрами на странице каталога
 var sidebar = document.querySelector('.sidebar');
+var sidebarContainer = document.querySelector('.catalog__sidebar-container');
 var filters = document.querySelector('.toolbar__item-link--mob');
 var filterCloseButton = document.querySelector('.sidebar__close-button');
 var catalog = document.querySelector('.catalog');
@@ -15,10 +16,21 @@ if (catalog) {
 
   filters.addEventListener('click', function () {
     sidebar.classList.toggle('sidebar--closed');
+    sidebarContainer.classList.toggle('catalog__sidebar-container--opened');
+    bodyContainer.classList.add('body-container--menu-opened');
+    // bodyContainer.classList.toggle('body-container--menu-opened');
   });
 
   filterCloseButton.addEventListener('click', function () {
     sidebar.classList.toggle('sidebar--closed');
+  });
+
+  sidebarContainer.addEventListener('click', function (event) {
+    if (event.target === event.currentTarget) {
+      sidebar.classList.add('sidebar--closed');
+      bodyContainer.classList.remove('body-container--menu-opened');
+      sidebarContainer.classList.remove('catalog__sidebar-container--opened');
+    }
   });
 
   // открытие / закрытие аккордеона

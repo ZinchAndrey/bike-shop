@@ -15,6 +15,16 @@
   padding-right: 10px;
 }
 
+.catalog__sidebar-container--opened {
+  display: block;
+  width: 100vw;
+  height: (100vh);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .catalog__block .slider-block__list {
   max-width: 985px;
   display: flex;
