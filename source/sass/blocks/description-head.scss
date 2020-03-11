@@ -15,6 +15,9 @@
   line-height: 56px;
   color: $red;
   margin: 20px 0;
+  width: fit-content;
+  padding-right: 30px;
+  background: url("../img/rouble-icon.svg") no-repeat right;
 }
 
 .description-head__ratio {
@@ -45,6 +48,11 @@
   .description-head__ratio {
     justify-content: center;
   }
+
+  .description-head__price {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -68,5 +76,8 @@
   .description-head__price {
     font-size: 28px;
     margin-top: 6px;
+    padding-right: 25px;
+    background-position: top 16px right;
+    background-size: 15px 21px;
   }
 }

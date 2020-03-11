@@ -3,6 +3,7 @@
   bottom: 0;
   color: $golden-text;
   width: 100%;
+  padding: 0 15px;
 
   a {
     @include hover-effect;
@@ -22,7 +23,8 @@
 
 .page-footer__container {
   margin: 0 auto;
-  width: calc(1127 / 1366 * 100%);
+  // width: calc(1127 / 1366 * 100%);
+  max-width: 1120px;
 }
 
 .page-footer__logo--main {
@@ -42,7 +44,7 @@
   }
 
   .nav__list {
-    margin: 20px 0;
+    margin: 15px 0;
   }
 }
 
