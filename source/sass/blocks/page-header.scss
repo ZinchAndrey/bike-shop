@@ -58,7 +58,8 @@
         font-size: 14px;
         line-height: 18px;
         position: absolute;
-        left: 8px;
+        left: 35%;
+        transform: translateX(-50%);
 
         @media (max-width: 1023px) {
           display: none;
@@ -67,6 +68,7 @@
 
       &--basket a::after {
         content: "1";
+        left: 50%;
       }
     }
   }
@@ -85,7 +87,7 @@
 }
 
 .page-header__nav-container {
-  width: 780px;
+  min-width: calc(780 / 1270 * 100%);
 }
 
 .page-header__menu-button {
