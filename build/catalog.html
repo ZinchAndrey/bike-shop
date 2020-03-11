@@ -62,7 +62,7 @@
             <button class="toolbar__item-link toolbar__item-link--mob" type="reset" form="filters">Фильтры (3)</button>
           </li>
           <li class="toolbar__item toolbar__item--sorting">
-            <select name="sorting" id="sorting">
+            <label class="visually-hidden" for="sorting">Сортировка</label><select name="sorting" id="sorting">
               <option value="popular">По популярности</option>
               <option value="price">По цене</option>
             </select>
@@ -96,17 +96,17 @@
               </div>
             </div>
             <div class="sidebar__select-block">
-              <select name="sorting" id="sorting-mob">
-                <option value="">По популярности</option>
-                <option value="">По цене</option>
+              <label class="visually-hidden" for="sorting-mob">Сортировка</label><select name="sorting" id="sorting-mob">
+                <option value="popular">По популярности</option>
+                <option value="price">По цене</option>
               </select>
             </div>
             <form action="#" method="get" id="filters">
               <fieldset class="price-scale">
                 <div class="price-scale__text">
-                  <input type="number" placeholder="28 000" name="lowest-price">
+                  <input type="number" placeholder="28 000" name="lowest-price" id="lowest-price"><label class="visually-hidden" for="lowest-price">Цена от</label>
                   <span>&mdash;</span>
-                  <input type="number" placeholder="180 000" name="highest-price">
+                  <input type="number" placeholder="180 000" name="highest-price" id="highest-price"><label class="visually-hidden" for="highest-price">Цена до</label>
                 </div>
                 <div class="price-scale__wrapper">
                   <div class="price-scale__bar"></div>

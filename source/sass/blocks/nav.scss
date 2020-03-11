@@ -1,7 +1,5 @@
 .nav {
   padding: 0 20px;
-  // box-sizing: content-box;
-  // width: 740px;
   box-sizing: border-box;
   // width: 780px;
 }
@@ -22,7 +20,10 @@
 }
 
 .nav__item {
+  padding: 5px;
   padding-right: 8px;
+  padding-left: 0;
+  // padding-right: 25px;
 
   &--contacts {
     padding-right: 0;
